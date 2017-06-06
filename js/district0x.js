@@ -663,7 +663,7 @@ $('.framework-code').each(function(){
 	
 	for(i=0;i<codelines;i++){
 		codedata += '<div class="codeline" data-num="'+i+'">';
-		codedata += '<img src="images/parts/codeline'+codenum+'.png">';
+		codedata += '<img src="./images/parts/codeline'+codenum+'.png">';
 		codedata += '<div class="code-mask-cover"></div>';
 		codedata += '</div>';
 		codenum++;
