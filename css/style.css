@@ -4157,6 +4157,8 @@ a:focus {
   left: 40px;
   top: -32px;
   z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
 }
 #roadmap .roadmap-block .blockbg .fan-set .fan[data-num="2"] {
   left: 269px;
