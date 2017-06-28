@@ -2133,6 +2133,81 @@ a:focus {
 #loader.remove {
   opacity: 0;
 }
+#loader .loader-logo {
+  width: 132px;
+  height: 134px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -66px;
+  margin-top: -67px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  opacity: 0;
+}
+#loader .blob-bg-anim .blobmover {
+  color: #7cf8fa;
+  opacity: .2;
+}
+#loader .blob-bg-anim .blobmover[data-num="0"] {
+  left: 20%;
+  top: 50%;
+}
+#loader .blob-bg-anim .blobmover[data-num="1"] {
+  -webkit-transform: scale(-1);
+  -moz-transform: scale(-1);
+  -ms-transform: scale(-1);
+  -o-transform: scale(-1);
+  left: 30%;
+  top: 10%;
+  font-size: 250px;
+}
+#loader .blob-bg-anim .blobmover[data-num="2"] {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  left: 70%;
+  top: 80%;
+  font-size: 140px;
+}
+#loader .blob-bg-anim .blobmover[data-num="3"] {
+  font-size: 135px;
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  top: 20%;
+  left: 60%;
+}
+#loader .blob-bg-anim .blobmover[data-num="3"] .floater {
+  animation-delay: 0s;
+}
+#loader .blob-bg-anim .blobmover[data-num="4"] {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  font-size: 280px;
+  left: 10%;
+  top: 80%;
+}
+#loader .blob-bg-anim .blobmover[data-num="4"] .floater {
+  animation-delay: 0s;
+}
+#loader .blob-bg-anim .blobmover[data-num="5"] {
+  font-size: 350px;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  top: 30%;
+  left: 60%;
+}
+#loader .blob-bg-anim .blobmover[data-num="5"] .floater {
+  animation-delay: 0s;
+}
 /*! GLOBAL: REUSE */
 .cta-btn {
   display: inline-block;
@@ -5990,6 +6065,39 @@ a:focus {
   }
   #team .team-person ~ .team-person:not(.filler) {
     margin-top: 75px;
+  }
+  #loader .blob-bg-anim {
+    width: 200px;
+    left: 50%;
+    margin-left: -200px;
+    overflow: visible;
+  }
+  #loader .blob-bg-anim .blobmover[data-num="0"] {
+    font-size: 170px;
+    left: 100%;
+  }
+  #loader .blob-bg-anim .blobmover[data-num="1"] {
+    font-size: 140px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    top: 120%;
+    left: 150%;
+  }
+  #loader .blob-bg-anim .blobmover[data-num="2"] {
+    font-size: 90px;
+  }
+  #loader .blob-bg-anim .blobmover[data-num="3"] {
+    font-size: 100px;
+    left: 100%;
+  }
+  #loader .blob-bg-anim .blobmover[data-num="4"] {
+    font-size: 200px;
+  }
+  #loader .blob-bg-anim .blobmover[data-num="5"] {
+    font-size: 120px;
+    left: 40%;
   }
 }
 /*! mq: 414 */

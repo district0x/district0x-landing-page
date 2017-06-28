@@ -76,6 +76,31 @@ a:focus{outline: none;}
 #loader{
 	.fixed; width: 100%; height: 100%; background-color: #fff; z-index: 60; .transition(opacity, .5s, linear);
 	&.remove{opacity: 0;}
+	.loader-logo{width: 132px; height: 134px; position: absolute; left: 50%; top: 50%; margin-left: -66px; margin-top: -67px; .scale(0); opacity: 0;}
+	.blob-bg-anim{
+		.blobmover{
+			color:@aqua; opacity: .2;
+			&[data-num="0"]{left: 20%; top: 50%;}
+			&[data-num="1"]{
+			.scale(-1); left: 30%; top:10%; font-size: 250px;
+			}
+			&[data-num="2"]{
+				.scaleX(-1); left: 70%; top: 80%; font-size: 140px;
+			}
+			&[data-num="3"]{
+				font-size: 135px; .rotate(-40deg); top:20%; left: 60%;
+				.floater{animation-delay: 0s;}
+			}
+			&[data-num="4"]{
+				.scaleX(-1); font-size: 280px; left: 10%; top: 80%;
+				.floater{animation-delay: 0s;}
+			}
+			&[data-num="5"]{
+				font-size: 350px; .scaleX(-1); top:30%; left: 60%;
+				.floater{animation-delay:0s}
+			}
+		}
+	}
 }
 
 
@@ -1766,6 +1791,20 @@ a:focus{outline: none;}
 		.team-person{
 			width: 100%; margin: 0 auto;
 			~.team-person:not(.filler){margin-top: 75px;}
+		}
+	}
+	
+	#loader{
+		.blob-bg-anim{
+			width: 200px; left: 50%; margin-left: -200px; overflow: visible;
+			.blobmover{
+				&[data-num="0"]{font-size: 170px; left: 100%;}
+				&[data-num="1"]{font-size: 140px; .scale(1); top: 120%; left: 150%;}
+				&[data-num="2"]{font-size: 90px;}
+				&[data-num="3"]{font-size: 100px; left: 100%;}
+				&[data-num="4"]{font-size: 200px;}
+				&[data-num="5"]{font-size: 120px; left: 40%;}
+			}
 		}
 	}
 }

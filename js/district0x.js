@@ -9,6 +9,22 @@ function animScroll(sec, speed, offset){
 	activeOffset = $(sec).offset().top+offset;	
 	TweenMax.to('html,body', speed, {scrollTop:activeOffset, ease:Expo.easeInOut});
 }
+var blobseq1 = [1,1,2,1,2,1];
+var blobseq2 = [1,2,2,1,2,1];
+var blobseq3 = [1,2,2,1,1,2];
+var blobseqM = [6,6,7,6,7,6];
+var distblobseq1 = [];
+var distblobseq2 = [];
+distblobseq1[0] = [4,5,5];
+distblobseq2[0] = [1,2,2];
+distblobseq1[1] = [4,5];
+distblobseq2[1] = [1,2];
+distblobseq1[2] = [4,5,4];
+distblobseq2[2] = [1,2,1];
+distblobseq1[3] = [5,4];
+distblobseq2[3] = [2,1];
+distblobseq1[4] = [5,5,4];
+distblobseq2[4] = [2,1,1];
 
 
 
@@ -91,9 +107,27 @@ $(window).resize();
 //! LOADER
 
 freezePage();
+// start bg blob animations
+$('#loader').find('.blob-bg-anim').find('.blobmover').each(function(i){
+	if(i<4){
+		$(this).find('.floater').addClass('blobfloat3');
+	} else {
+		$(this).find('.floater').addClass('blobfloat6');
+	}
+	
+	$(this).find('.icon').addClass('blobfloatInner'+blobseq3[i]);
+})
+TweenMax.to('.loader-logo', .75, {delay:.2, scaleX:1, scaleY:1, opacity:1, ease:Elastic.easeOut, easeParams:[3,3]});
+
 $(window).on('load', function(){
 	$(window).resize();
-	TweenMax.to('#loader', .5, {opacity:0, 'display':'none'});
+	TweenMax.to('.loader-logo', .5, {delay:.75, scaleX:0, scaleY:0, opacity:0, ease:Back.easeInOut, easeParams:[1,4]})
+	TweenMax.to('#loader', .5, {delay:1, opacity:0, 'display':'none', onComplete:function(){
+		$('#loader').find('.blob-bg-anim').find('.blobmover').each(function(i){
+			$(this).find('.floater').removeClass('blobfloat3');
+			$(this).find('.icon').removeClass('blobfloatInner'+blobseq3[i]);
+		})
+	}});
 	//$('#loader').addClass('remove');
 	unfreezePage();
 	
@@ -627,22 +661,6 @@ function resetCheckboxes(){
 	})
 }
 resetCheckboxes();
-
-var blobseq1 = [1,1,2,1,2,1];
-var blobseq2 = [1,2,2,1,2,1];
-var blobseqM = [6,6,7,6,7,6];
-var distblobseq1 = [];
-var distblobseq2 = [];
-distblobseq1[0] = [4,5,5];
-distblobseq2[0] = [1,2,2];
-distblobseq1[1] = [4,5];
-distblobseq2[1] = [1,2];
-distblobseq1[2] = [4,5,4];
-distblobseq2[2] = [1,2,1];
-distblobseq1[3] = [5,4];
-distblobseq2[3] = [2,1];
-distblobseq1[4] = [5,5,4];
-distblobseq2[4] = [2,1,1];
 
 
 
