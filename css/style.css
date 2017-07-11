@@ -2688,7 +2688,7 @@ a:focus {
   top: -460px;
   right: -565px;
   width: 1350px;
-  height: 1460px;
+  height: 1533px;
   border-radius: 50%;
   background-color: #2c398f;
   overflow: hidden;
@@ -5584,13 +5584,13 @@ a:focus {
     width: 1450px;
   }
   #globalMenu #globalNav {
-    margin-top: 95px;
+    margin-top: 20px;
     padding: 0px 25px;
   }
-  #globalMenu #globalNav a {
+  #globalMenu #globalNav .nav a {
     font-size: 18px;
   }
-  #globalMenu #globalNav li ~ li {
+  #globalMenu #globalNav .nav li ~ li {
     margin-top: 21px;
   }
   #globalMenu #globalNav .social {
