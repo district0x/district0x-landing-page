@@ -134,7 +134,7 @@ a:focus{outline: none;}
 		.inline-c;
 		~li{margin-left: 10px;}
 	}
-	/*a:not(.cta-btn){.fils(~"12px/1"); color: @bcblue; margin-right: 30px;}*/
+	a:not(.cta-btn){.fils(~"13px/1"); color: @bcblue; margin-right: 10px; display:block; padding-bottom: 4px;}
 	.cta-btn{
 		padding: 10px 20px;
 		span{.inline-c;}
@@ -267,7 +267,7 @@ a:focus{outline: none;}
 	}
 	.menu-wrap{
 		display: none; position: absolute; top: 0; right: 0; width: 800px; height: 1000px;
-		.menu-blob{position: absolute; transform-origin: center right; top: -460px; right: -565px; width: 1350px; height: 1460px; border-radius: 50%; border-radius: 50%; background-color: @blue; overflow: hidden;}
+		.menu-blob{position: absolute; transform-origin: center right; top: -460px; right: -565px; width: 1350px; height: 1533px; border-radius: 50%; border-radius: 50%; background-color: @blue; overflow: hidden;}
 		.menu-contents{
 			position: absolute; top: 0px; right: 0px; padding: 32px 70px;
 			.toplinks{
@@ -1117,6 +1117,40 @@ a:focus{outline: none;}
 }
 
 
+/*! SECTION: 10 SUPPORTERS */
+
+#supporters {
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 30px;
+
+	.logos {
+		padding-top: 100px;
+		padding-bottom: 180px;
+	}
+
+	.logo {
+		width: 33.3%;
+
+		&.one {
+			border-right: 1px solid #c7cfdd;
+			img {
+				max-width: 201px;
+			}
+		}
+
+		&.two img {
+			max-width: 179px;
+		}
+
+		&.three {
+			border-left: 1px solid #c7cfdd;
+			img {
+				max-width: 188px;
+			}
+		}
+	}
+}
 
 
 
@@ -1475,10 +1509,33 @@ a:focus{outline: none;}
 			.menu-blob{width: 1450px;}
 		}
 		#globalNav{
-			margin-top: 95px; padding: 0px 25px;
-			a{font-size: 18px;}
-			li~li{margin-top: 21px;}
+			margin-top: 20px; padding: 0px 25px;
+			
+			.nav {
+				a{font-size: 18px;}
+				li~li{
+					margin-top: 21px;
+				}
+			}
 			.social{display: none;}
+		}
+		.mobile-top-links {
+			display: block;
+			padding: 0 25px 20px 25px;
+			margin-top: 77px;
+			border-bottom:1px solid #384b8f;
+			opacity: 0;
+			li {
+				display: inline-block;
+				margin-left: 20px;
+				&:first-child {
+					margin-left:0;
+				}
+			}
+			a {
+				font-size: 13px;
+				color:@aqua;
+			}
 		}
 	}
 	
@@ -1626,6 +1683,33 @@ a:focus{outline: none;}
 		.team-person{
 			width: 48.5%; max-width: 225px;
 			&:nth-child(n+3):not(.filler){margin-top: 75px;}
+		}
+	}
+
+	#supporters {
+		padding-top: 70px;
+
+		.logos {
+			padding-top: 0;
+			padding-bottom: 0;
+			max-width: 251px;
+			margin: 0 auto;
+		}
+
+		.logo {
+			width: 100%;
+			padding: 85px 0;
+
+			&.one {
+				padding-top: 55px;
+				border-right:none;
+				border-bottom: 1px solid #c7cfdd;
+			}
+
+			&.three {
+				border-left:none;
+				border-top: 1px solid #c7cfdd;
+			}
 		}
 	}
 }

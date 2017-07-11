@@ -252,8 +252,9 @@ function openMenu(){
 	
 	bDel = .5;
 	
+	TweenMax.to($('.mobile-top-links'), .5, {delay:.5, opacity:1});
 	TweenMax.to($('.mobile-logo, .menu-wrap .toplinks.dsk'), .3, {delay:.5, opacity:1})
-	TweenMax.to($('.mobile-links, #globalNav .social'), .3, {delay:bDel+(9*.1), opacity:1})
+	TweenMax.to($('.mobile-links, #globalNav .social'), .3, {delay:bDel+(10*.1), opacity:1})
 	
 	// bring on links
 	$('#globalNav').find('.nav').css('opacity','');
@@ -290,7 +291,7 @@ function closeMenu(){
 		menuOpen = false;
 	}})
 	
-	TweenMax.to($('.menu-wrap .toplinks.dsk, .mobile-logo, .mobile-links, #globalNav ul'), .3, {opacity:0})
+	TweenMax.to($('.menu-wrap .toplinks.dsk, .mobile-logo, .mobile-links, #globalNav ul, .mobile-top-links'), .3, {opacity:0})
 	
 	if(mobile){
 		unfreezePage();
@@ -681,7 +682,13 @@ $('.framework-code').each(function(){
 	
 	for(i=0;i<codelines;i++){
 		codedata += '<div class="codeline" data-num="'+i+'">';
-		codedata += '<img src="./images/parts/codeline'+codenum+'.png">';
+		codedata += '<img src="';
+		if($('body').hasClass('cn')) {
+		    codedata += '../';
+        } else {
+            codedata += './';
+        }
+		codedata += 'images/parts/codeline'+codenum+'.png">';
 		codedata += '<div class="code-mask-cover"></div>';
 		codedata += '</div>';
 		codenum++;
