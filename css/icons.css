@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5ksol9');
-  src:  url('fonts/icomoon.eot?5ksol9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.woff2?5ksol9') format('woff2'),
-    url('fonts/icomoon.ttf?5ksol9') format('truetype'),
-    url('fonts/icomoon.woff?5ksol9') format('woff'),
-    url('fonts/icomoon.svg?5ksol9#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?mzh1n7');
+  src:  url('fonts/icomoon.eot?mzh1n7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.woff2?mzh1n7') format('woff2'),
+    url('fonts/icomoon.ttf?mzh1n7') format('truetype'),
+    url('fonts/icomoon.woff?mzh1n7') format('woff'),
+    url('fonts/icomoon.svg?mzh1n7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,6 +27,12 @@
 
 .icon-closex:before {
   content: "\e909";
+}
+.icon-starbg:before {
+  content: "\e90b";
+}
+.icon-telegram:before {
+  content: "\e90a";
 }
 .icon-blob2:before {
   content: "\e906";
@@ -58,45 +64,18 @@
 .icon-twitter:before {
   content: "\f099";
 }
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
 .icon-slack:before {
   content: "\f198";
 }
 .icon-medium:before {
   content: "\f23a";
-}
-
-@font-face {
-  font-family: 'icomoon2';
-  src:  url('fonts/icomoon2.eot?lx68mw');
-  src:  url('fonts/icomoon2.eot?lx68mw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon2.ttf?lx68mw') format('truetype'),
-    url('fonts/icomoon2.woff?lx68mw') format('woff'),
-    url('fonts/icomoon2.svg?lx68mw#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon2-"], [class*=" icon2-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon2' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon2-email:before {
-  content: "\e900";
-}
-.icon2-github:before {
-  content: "\eab0";
-}
-.icon2-linkedin2:before {
-  content: "\eaca";
 }

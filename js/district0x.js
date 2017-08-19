@@ -1,5 +1,6 @@
 var mobile = false;
 var mobileBreak = 768;
+var stickyBreak = 900;
 if($(window).width() <= mobileBreak){mobile = true;}
 var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 var path;
@@ -37,18 +38,19 @@ var winH;
 $(window).resize(function(){
 	winW = $(window).width();
 	winH = $(window).height();
-	//console.log(winW);
+	console.log(winW);
 	
 	if(winW<=mobileBreak && !mobile){
 		mobile = true;
-		
-		if(stickyOpen){
-			TweenMax.set($('.sticky'), {'transform':'translate3d(0px, '+ -stickyH +'px, 0px)', 'display':'none', ease:Power3.easeOut});					
-			stickyOpen = false;
-		}
 	}
 	if(winW>mobileBreak && mobile){
 		mobile = false;
+	}
+	
+	// update sticky
+	if(winW<stickyBreak && stickyOpen){
+		TweenMax.set($('.sticky'), {'transform':'translate3d(0px, '+ -stickyH +'px, 0px)', 'display':'none', ease:Power3.easeOut});					
+		stickyOpen = false;
 	}
 	
 	// update big blob
@@ -117,6 +119,10 @@ $('#loader').find('.blob-bg-anim').find('.blobmover').each(function(i){
 	
 	$(this).find('.icon').addClass('blobfloatInner'+blobseq3[i]);
 })
+
+// vote badge
+$('.vote-seal').find('.hand').css({'transform':'translate3d(0px, 100px, 0px)'})
+
 TweenMax.to('.loader-logo', .75, {delay:.2, scaleX:1, scaleY:1, opacity:1, ease:Elastic.easeOut, easeParams:[3,3]});
 
 $(window).on('load', function(){
@@ -127,6 +133,17 @@ $(window).on('load', function(){
 			$(this).find('.floater').removeClass('blobfloat3');
 			$(this).find('.icon').removeClass('blobfloatInner'+blobseq3[i]);
 		})
+		
+		// animate vote badge
+		
+		$('.vote-txt').addClass('colorfade');
+		$('.vote-star').find('.bg').addClass('colorfade2')
+		TweenMax.to($('.vote-seal'), .75, {startAt:{scaleX:0, scaleY:0}, scaleX:1, scaleY:1, opacity:1, ease:Elastic.easeOut, easeParams:[2,3]})
+		TweenMax.to($('.vote-seal').find('.hand[data-num="1"]'), .75, {delay:.2, 'transform':'translate3d(0px, 0px, 0px)', ease:Power3.easeInOut})
+		TweenMax.to($('.vote-seal').find('.hand[data-num="3"]'), .75, {delay:.4, 'transform':'translate3d(0px, 0px, 0px)', ease:Power3.easeInOut})
+		TweenMax.to($('.vote-seal').find('.hand[data-num="2"]'), .75, {delay:.6, 'transform':'translate3d(0px, 0px, 0px)', ease:Power3.easeInOut})
+
+		
 	}});
 	//$('#loader').addClass('remove');
 	unfreezePage();
@@ -165,7 +182,7 @@ $(window).scroll(function(){
 		
 	st = $(this).scrollTop();
 
-	if(st<lastSt && !mobile){	
+	if(st<lastSt && winW>=stickyBreak){	
 		if(!stickyOpen && st > 40){
 			//console.log('go')
 			TweenMax.to($('.sticky'), .75, {delay:.2, 'transform':'translate3d(0px, 0px, 0px)', 'display':'block', ease:Elastic.easeOut, easeParams:[3,3]});	
@@ -375,7 +392,10 @@ $(window).scroll(function(){
 					$('#hero').find('.pipeline').each(function(i){
 						$(this).find('.pipe-data').addClass('pa0'+(i+1));
 						$(this).find('.pipe-data>div').addClass('paD0'+(i+1));
-					})					
+					})
+					
+					$('.vote-txt').addClass('colorfade');
+					$('.vote-star').find('.bg').addClass('colorfade2')					
 				}
 				
 				if($(this).attr('id') == 'framework'){
@@ -428,8 +448,31 @@ $(window).scroll(function(){
 							$(this).find('div').addClass('paD06');
 						}
 					})
+					
+					// set checkmarks to draw on
+					var checkTiming = 500;
+					var m = 0;
+					setTimeout(function(){
+						animCheckmarks = setInterval(function(){	
+							$('.bullet-checkmark[data-num="'+m+'"]').addClass('drawn');	
+							m++;
+							if(m == $('.bullet-checkmark').length){
+								clearInterval(checkTiming);
+							}
+						}, checkTiming);
+					}, 1500)
 				}	
 				
+				if($(this).attr('id') == 'build'){
+										
+					$('#build').find('.pipeline').each(function(i){
+						$(this).find('.pipe-data').addClass('pa02');
+						$(this).find('.pipe-data>div').addClass('paD02');
+					})
+				
+				}
+				
+				/*
 				if($(this).attr('id') == 'contribution'){
 					$('#contribution').find('.blobmover').each(function(i){
 						
@@ -441,6 +484,7 @@ $(window).scroll(function(){
 						$(this).find('.icon').addClass('blobfloatInner'+blobseq2[i]);
 					})
 				}
+				*/
 				
 				if($(this).attr('id') == 'globalFooter'){
 					$('#globalFooter').find('.pipe-data').addClass('pa04');
@@ -464,6 +508,9 @@ $(window).scroll(function(){
 						$(this).find('.pipe-data').removeClass('pa0'+(i+1));
 						$(this).find('.pipe-data>div').removeClass('paD0'+(i+1));
 					})
+					
+					$('.vote-txt').removeClass('colorfade');
+					$('.vote-star').find('.bg').removeClass('colorfade2')
 				}
 				
 				if($(this).attr('id') == 'framework'){
@@ -516,8 +563,21 @@ $(window).scroll(function(){
 							$(this).find('div').removeClass('paD06');
 						}
 					})
+					
+					// remove checkmarks
+					$('.bullet-checkmark').removeClass('drawn');	
 				}	
 				
+				if($(this).attr('id') == 'build'){
+										
+					$('#build').find('.pipeline').each(function(i){
+						$(this).find('.pipe-data').removeClass('pa02');
+						$(this).find('.pipe-data>div').removeClass('paD02');
+					})
+				
+				}
+				
+				/*
 				if($(this).attr('id') == 'contribution'){
 					$('#contribution').find('.blobmover').each(function(i){
 						if(!mobile){
@@ -528,6 +588,7 @@ $(window).scroll(function(){
 						$(this).find('.icon').removeClass('blobfloatInner'+blobseq2[i]);
 					})
 				}
+				*/
 				
 				if($(this).attr('id') == 'globalFooter'){
 					$('#globalFooter').find('.pipe-data').removeClass('pa04');
@@ -558,6 +619,17 @@ $(window).scroll(function(){
 
 })
 
+$('.bullet-check').each(function(){
+	if($(this).hasClass('on')){
+		$(this).html('<img src="images/parts/checkbox@2x.png"><div class="bullet-checkmark"><img src="images/parts/checkmark@2x.png"></div>');
+	} else {
+		$(this).html('<img src="images/parts/checkbox@2x.png">');		
+	}	
+})
+$('.bullet-checkmark').each(function(i){
+	$(this).attr('data-num',i);			
+})
+
 
 
 
@@ -570,9 +642,9 @@ $('.team-photo').mouseenter(function(){
 $('.team-photo').mouseleave(function(){
 	$(this).siblings('.team-hover').css({'opacity':0})
 })
-$('.team-person').click(function(){
-	if(!$(this).hasClass('on')){
-		resetBios($(this));
+$('.team-photo').click(function(){
+	if(!$(this).parents('.team-person').hasClass('on')){
+		resetBios($(this).parents('.team-person'));
 	}
 })
 $('.team-person').find('.blob-close').click(function(){

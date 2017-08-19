@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*! VARIABLES */
 /* FUNCTIONS */
 /*! ANIMATIONS */
 @-webkit-keyframes spin {
@@ -1750,3 +1751,181 @@
 .blobfloat7 {
   animation: blobfloater7 infinite 20s ease-in-out;
 }
+/*! ANIMATIONS: Build section */
+@-webkit-keyframes colors {
+  0% {
+    color: #2c398f;
+  }
+  20% {
+    color: #2c398f;
+  }
+  25% {
+    color: #7cf8fa;
+  }
+  45% {
+    color: #7cf8fa;
+  }
+  50% {
+    color: #ffd600;
+  }
+  70% {
+    color: #ffd600;
+  }
+  75% {
+    color: #23fdd8;
+  }
+  95% {
+    color: #23fdd8;
+  }
+  100% {
+    color: #2c398f;
+  }
+}
+@keyframes colors {
+  0% {
+    color: #2c398f;
+  }
+  20% {
+    color: #2c398f;
+  }
+  25% {
+    color: #7cf8fa;
+  }
+  45% {
+    color: #7cf8fa;
+  }
+  50% {
+    color: #ffd600;
+  }
+  70% {
+    color: #ffd600;
+  }
+  75% {
+    color: #23fdd8;
+  }
+  95% {
+    color: #23fdd8;
+  }
+  100% {
+    color: #2c398f;
+  }
+}
+.colorfade {
+  -webkit-animation: colors infinite 5s linear;
+  -moz-animation: colors infinite 5s linear;
+  animation: colors infinite 5s linear;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes colors2 {
+  0% {
+    color: #7cf8fa;
+  }
+  30% {
+    color: #7cf8fa;
+  }
+  40% {
+    color: #fff9d3;
+  }
+  70% {
+    color: #ffd600;
+  }
+  80% {
+    color: #23fdd8;
+  }
+  90% {
+    color: #23fdd8;
+  }
+  100% {
+    color: #7cf8fa;
+  }
+}
+@keyframes colors2 {
+  0% {
+    color: #7cf8fa;
+  }
+  30% {
+    color: #7cf8fa;
+  }
+  40% {
+    color: #fff9d3;
+  }
+  70% {
+    color: #ffd600;
+  }
+  80% {
+    color: #23fdd8;
+  }
+  90% {
+    color: #23fdd8;
+  }
+  100% {
+    color: #7cf8fa;
+  }
+}
+.colorfade2 {
+  -webkit-animation: colors2 infinite 3s linear;
+  -moz-animation: colors2 infinite 3s linear;
+  animation: colors2 infinite 3s linear;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes lift {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, -50px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes lift {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, -45px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+.lifter {
+  -webkit-animation: lift infinite 3s ease-in-out;
+  -moz-animation: lift infinite 3s ease-in-out;
+  animation: lift infinite 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes tractormover {
+  0% {
+    transform: translate3d(-10px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(20px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-10px, 0px, 0px);
+  }
+}
+@keyframes tractormover {
+  0% {
+    transform: translate3d(-10px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(20px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-10px, 0px, 0px);
+  }
+}
+.tractormove {
+  -webkit-animation: tractormover infinite 4s ease-in-out;
+  -moz-animation: tractormover infinite 4s ease-in-out;
+  animation: tractormover infinite 4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+/*
+@-webkit-keyframes signswing{0%{transform: rotateX(15deg);} 50%{transform: rotateX(-20deg);} 100%{transform: rotateX(15deg);}}
+@keyframes signswing{0%{transform: rotateX(15deg);} 50%{transform: rotateX(-20deg);} 100%{transform: rotateX(15deg);}}
+.swing1{animation: signswing infinite 3s ease-in-out;}
+*/
