@@ -235,3 +235,30 @@
 @keyframes blobfloater7{0%{opacity: 1; transform:rotate(-20deg) translate3d(300px,200px, 0px);} 50%{opacity: 1; transform:rotate(0deg) translate3d(-300px,-100px, 0px);} 100%{opacity: 1; transform:rotate(-20deg) translate3d(300px,200px, 0px);}}
 .blobfloat7{animation: blobfloater7 infinite 20s ease-in-out;}
 
+
+
+
+
+/*! ANIMATIONS: Build section */
+
+@-webkit-keyframes colors{0%{color: @blue;} 20%{color: @blue;} 25%{color: @aqua;} 45%{color: @aqua;} 50%{color: @yellow2;} 70%{color: @yellow2;} 75%{color: @green;} 95%{color: @green;} 100%{color: @blue;}} 
+@keyframes colors{0%{color: @blue;} 20%{color: @blue;} 25%{color: @aqua;} 45%{color: @aqua;} 50%{color: @yellow2;} 70%{color: @yellow2;} 75%{color: @green;} 95%{color: @green;} 100%{color: @blue;}} 
+.colorfade{.animation(colors, 5s, linear);}
+
+@-webkit-keyframes colors2{0%{color: @aqua;} 30%{color: @aqua;} 40%{color: @yellow;} 70%{color: @yellow2;} 80%{color: @green;} 90%{color: @green;} 100%{color: @aqua;}} 
+@keyframes colors2{0%{color: @aqua;} 30%{color: @aqua;} 40%{color: @yellow;} 70%{color: @yellow2;} 80%{color: @green;} 90%{color: @green;} 100%{color: @aqua;}} 
+.colorfade2{.animation(colors2, 3s, linear);}
+
+@-webkit-keyframes lift{0%{transform:translate3d(0px,0px, 0px);} 50%{transform:translate3d(0px,-50px, 0px);} 100%{transform:translate3d(0px,0px, 0px);}}
+@keyframes lift{0%{transform:translate3d(0px,0px, 0px);} 50%{transform:translate3d(0px,-45px, 0px);} 100%{transform:translate3d(0px,0px, 0px);}}
+.lifter{.animation(lift, 3s, ease-in-out);}
+
+@-webkit-keyframes tractormover{0%{transform:translate3d(-10px,0px, 0px);} 50%{transform:translate3d(20px,0px, 0px);} 100%{transform:translate3d(-10px,0px, 0px);}}
+@keyframes tractormover{0%{transform:translate3d(-10px,0px, 0px);} 50%{transform:translate3d(20px,0px, 0px);} 100%{transform:translate3d(-10px,0px, 0px);}}
+.tractormove{.animation(tractormover, 4s, ease-in-out);}
+
+/*
+@-webkit-keyframes signswing{0%{transform: rotateX(15deg);} 50%{transform: rotateX(-20deg);} 100%{transform: rotateX(15deg);}}
+@keyframes signswing{0%{transform: rotateX(15deg);} 50%{transform: rotateX(-20deg);} 100%{transform: rotateX(15deg);}}
+.swing1{animation: signswing infinite 3s ease-in-out;}
+*/

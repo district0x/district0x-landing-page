@@ -1288,7 +1288,7 @@ Main Header
         margin-right: 10px;
         display: block;
         padding-bottom: 4px;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
     }
 
     header.main.sticky {
@@ -3467,4 +3467,32 @@ Placeholder
 
 @media screen and (max-width: 767px) {
 
+}
+
+.icon-github{font-size: 120%;}
+nav.desktop li:not(.icon) a{
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+}
+nav.desktop li:not(.icon) a:hover{opacity: .5;}
+
+/*! mq: 374 */
+@media screen and (max-width: 374px) {
+
+	.mobile-menu .ctas{padding-top: 18px;}	
+	.mobile-menu .ctas li{display: block;}	
+	.mobile-menu .email{font-size: 14px;}
+	.mobile-menu .ctas li~li{margin-left: 0px; margin-top: 20px;}	
+	.mobile-menu li.icon a{
+		width: 40px;
+	    height: 40px;
+	    border-radius: 40px;
+	    line-height: 45px;
+	    font-size: 20px;
+	}
+	.mobile-menu li.icon{margin-right: 0px;}
+	.mobile-menu li.icon~li.icon{margin-left: 5px;}
+	
 }
