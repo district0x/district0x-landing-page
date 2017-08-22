@@ -626,6 +626,13 @@ $('.bullet-check').each(function(){
 		$(this).html('<img src="images/parts/checkbox@2x.png">');		
 	}	
 })
+$('.bullet-check.cn').each(function(){
+	if($(this).hasClass('on')){
+		$(this).html('<img src="../images/parts/checkbox@2x.png"><div class="bullet-checkmark"><img src="../images/parts/checkmark@2x.png"></div>');
+	} else {
+		$(this).html('<img src="../images/parts/checkbox@2x.png">');		
+	}	
+})
 $('.bullet-checkmark').each(function(i){
 	$(this).attr('data-num',i);			
 })
