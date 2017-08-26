@@ -1016,7 +1016,7 @@ Mobile Menu
 
 /* Desktop */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 901px) {
     .mobile-menu {
         display: none;
     }
@@ -1024,8 +1024,12 @@ Mobile Menu
 
 /* Mobile */
 
-@media screen and (max-width: 767px) {
-
+@media screen and (max-width: 900px) {
+	
+    nav.desktop, header.main.sticky{
+        display: none;
+    }    
+    
     .mobile-menu {
         position: fixed;
         right: 0px;
@@ -1201,11 +1205,11 @@ Mobile Menu
     }
 
     .mobile-menu .description {
-        padding: 0 18px 20px 18px;
+        padding: 18px 18px 20px 18px;
     }
 
     .mobile-menu .ctas {
-        padding: 27px 18px 18px 18px;
+        padding: 25px 18px;
         border-top: 1px solid #384b8f;
         border-bottom: 1px solid #384b8f;
     }
@@ -1333,10 +1337,6 @@ Main Header
 @media screen and (max-width: 767px) {
     header.main .container {
         padding-top: 25px;
-    }
-
-    nav.desktop {
-        display: none;
     }
 
     .site-logo {
@@ -3476,7 +3476,7 @@ nav.desktop li:not(.icon) a{
 	-o-transition: opacity 0.2s linear;
 	transition: opacity 0.2s linear;
 }
-nav.desktop li:not(.icon) a:hover{opacity: .5;}
+nav.desktop li:not(.icon) a:hover, nav.desktop li a.on{opacity: .5;}
 
 /*! mq: 374 */
 @media screen and (max-width: 374px) {
@@ -3495,4 +3495,91 @@ nav.desktop li:not(.icon) a:hover{opacity: .5;}
 	.mobile-menu li.icon{margin-right: 0px;}
 	.mobile-menu li.icon~li.icon{margin-left: 5px;}
 	
+}
+
+
+
+@import "../functions.less";
+
+.mobile-top-links {
+	display: block;
+	padding: 0 25px 20px 25px;
+	border-bottom:1px solid #384b8f;
+	li {
+		display: inline-block;
+		margin-left: 20px;
+		&:first-child {
+			margin-left:0;
+		}
+	}
+	a {
+		.fils(~"13px/1");
+		color:@aqua;
+	}
+}
+
+
+
+
+
+/*! FAQ PAGE */
+
+#faq {
+    padding-top: 45px; padding-bottom: 70px;
+    .container>h2{
+	    .fils(~"29px/1", 300); color: #2c398f; text-align: center; margin: 0; margin-bottom: 85px;
+	    .mob{display: none;}
+	}
+}
+.footerblob{
+    position: absolute; left: 0px; bottom: 0px; width:659px; height:568px; z-index: -1;
+    img{width: 100%; height: auto;}
+}
+.faq-wrap{
+	border-bottom: 1px solid #dadfe8; text-align: left;
+	h4{.fils(24px, 700); margin: 0; margin-bottom:40px; color: @blue;}
+	p{.prox(~"18px/1.6"); color: @bcblue; padding-right: 20px;}
+	.faq-question{
+		border-top: 1px solid #dadfe8; position: relative; cursor: pointer;
+		h2{.fils(~"23px/1", 300); color: @blue; padding: 37px 0 32px; margin: 0; padding-right: 50px;}
+		.arr{position: absolute; right: 30px; top: 35px; font-size: 27px; color: @blue; .transition(all, .5s, ease-in-out);}
+		.answer{
+			height: 0; overflow: hidden;
+			>div{padding-bottom: 25px;}
+		}
+		&.open{
+			.arr{.rotate(-180deg);}
+			.answer{height: auto;}
+		}
+	}
+	+.faq-wrap{margin-top: 90px;}
+}
+footer.faq{
+	.container{padding-bottom: 150px;}
+	.city-animation{bottom: 60px;}
+}
+
+@media screen and (max-width: 1024px) {
+	.faq-wrap .faq-question .arr{right: 0px;}
+}
+
+@media screen and (max-width: 500px) {
+	#faq{
+		padding-top: 30px;
+		.container>h2{
+			font-size: 22px; margin-bottom: 45px;
+			.dsk{display: none;}
+			.mob{display: block;}
+		}
+	}
+	.faq-wrap{
+		h4{font-size: 20px;}
+		p{font-size: 16px;}
+		.faq-question{
+			h2{font-size: 20px; line-height: 1.5; padding: 22px 0 18px; padding-right: 20px;}
+			.answer > div{padding-bottom: 15px;}
+			.arr{font-size: 20px; top: 25px;}
+		}
+	}
+	.footerblob{left: -150px; bottom: -60px;}
 }
