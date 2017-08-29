@@ -89,6 +89,7 @@ jQuery(document).ready(function($){
 	var lastSt = 0;
 	var st;
 	var autoOff = false;
+	var stickyBreak = 900;
 
 	if($(window).width()>=768){
 		$('header.main').clone().appendTo('body').addClass('sticky');
@@ -98,7 +99,7 @@ jQuery(document).ready(function($){
 			
 		st = $(this).scrollTop();
 
-		if(st<lastSt && $(window).width()>=768){	
+		if(st<lastSt && $(window).width()>=stickyBreak){	
 			if(!stickyOpen && st > 40){
 				TweenMax.to($('.sticky'), .75, {delay:.2, 'transform':'translate3d(0px, 0px, 0px)', 'display':'block', ease:Elastic.easeOut, easeParams:[3,3]});	
 				stickyOpen = true;
@@ -278,3 +279,39 @@ jQuery(document).ready(function($){
 	}
 
 });
+
+$('.menu-contents').click(function(e){
+	e.stopPropagation();
+})
+
+
+
+
+
+//! PAGE: FAQ - EXPAND COLLAPSE
+
+$('.faq-question').find('.answer').height(0);
+$('.faq-question').click(function(){
+	if(!$(this).hasClass('open')){
+		resetfaqs($(this));
+		$(this).addClass('open');
+		tmpH = $(this).find('.answer>div').outerHeight();
+		TweenMax.to($(this).find('.answer'), .5, {startAt:{height:0}, height:tmpH, ease:Expo.easeInOut, onCompleteParams:[$(this).find('.answer')], onComplete:function(t){
+			t.css('height','');
+		}})
+	} else {
+		$(this).removeClass('open')
+		$(this).find('.answer').css({'height':$(this).find('.answer>div').outerHeight()})
+		TweenMax.to($(this).find('.answer'), .5, {height:0, ease:Expo.easeInOut})
+	}
+})
+
+function resetfaqs(obj){
+	$('.faq-question').each(function(){
+		if($(this).hasClass('open') && $(this) != obj){
+			$(this).removeClass('open');
+			$(this).find('.answer').css({'height':$(this).find('.answer>div').outerHeight()})
+			TweenMax.to($(this).find('.answer'), .5, {height:0, ease:Expo.easeInOut})
+		}
+	})
+}

@@ -1,6 +1,6 @@
 var mobile = false;
 var mobileBreak = 768;
-var stickyBreak = 900;
+var stickyBreak = 975;
 if($(window).width() <= mobileBreak){mobile = true;}
 var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 var path;
