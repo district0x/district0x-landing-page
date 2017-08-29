@@ -3077,6 +3077,18 @@ nav.desktop li a.on {
   color: #47608e;
   padding-right: 20px;
 }
+.faq-wrap a {
+  color: #2c398f;
+  text-decoration: underline;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+.faq-wrap a:hover {
+  opacity: .5;
+  text-decoration: underline;
+}
 .faq-wrap .faq-question {
   border-top: 1px solid #dadfe8;
   position: relative;
