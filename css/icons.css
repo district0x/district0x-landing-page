@@ -1,11 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mzh1n7');
-  src:  url('fonts/icomoon.eot?mzh1n7#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.woff2?mzh1n7') format('woff2'),
-    url('fonts/icomoon.ttf?mzh1n7') format('truetype'),
-    url('fonts/icomoon.woff?mzh1n7') format('woff'),
-    url('fonts/icomoon.svg?mzh1n7#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?z8altp');
+  src:  url('fonts/icomoon.eot?z8altp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z8altp') format('truetype'),
+    url('fonts/icomoon.woff?z8altp') format('woff'),
+    url('fonts/icomoon.svg?z8altp#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,14 +24,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-closex:before {
-  content: "\e909";
+.icon-check:before {
+  content: "\e900";
 }
-.icon-starbg:before {
-  content: "\e90b";
+.icon-arrow-down:before {
+  content: "\e901";
 }
-.icon-telegram:before {
-  content: "\e90a";
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-arrow-up:before {
+  content: "\e903";
+}
+.icon-arrow-left:before {
+  content: "\e904";
+}
+.icon-team-blob:before {
+  content: "\e905";
 }
 .icon-blob2:before {
   content: "\e906";
@@ -43,23 +51,14 @@
 .icon-blob1:before {
   content: "\e908";
 }
-.icon-team-blob:before {
-  content: "\e905";
+.icon-closex:before {
+  content: "\e909";
 }
-.icon-check:before {
-  content: "\e900";
+.icon-telegram:before {
+  content: "\e90a";
 }
-.icon-arrow-down:before {
-  content: "\e901";
-}
-.icon-arrow-up:before {
-  content: "\e903";
-}
-.icon-arrow-right:before {
-  content: "\e902";
-}
-.icon-arrow-left:before {
-  content: "\e904";
+.icon-starbg:before {
+  content: "\e90b";
 }
 .icon-twitter:before {
   content: "\f099";
@@ -78,4 +77,7 @@
 }
 .icon-medium:before {
   content: "\f23a";
+}
+.icon-reddit:before {
+  content: "\eac6";
 }
