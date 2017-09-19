@@ -48,7 +48,7 @@ $(window).resize(function(){
 	}
 	
 	// update sticky
-	if(winW<stickyBreak && stickyOpen){
+	if(winW<stickyBreak){
 		TweenMax.set($('.sticky'), {'transform':'translate3d(0px, '+ -stickyH +'px, 0px)', 'display':'none', ease:Power3.easeOut});					
 		stickyOpen = false;
 	}
@@ -308,6 +308,7 @@ function closeMenu(){
 		menuOpen = false;
 	}})
 	
+	TweenMax.killTweensOf($('.mobile-links, #globalNav .social'));
 	TweenMax.to($('.menu-wrap .toplinks.dsk, .mobile-logo, .mobile-links, #globalNav ul, .mobile-top-links'), .3, {opacity:0})
 	
 	if(mobile){
