@@ -2509,7 +2509,7 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
 }
-.toplinks .cta-btn .icon-slack {
+.toplinks .cta-btn .icon-telegram {
   font-size: 16px;
   display: inline-block;
   margin-left: 10px;
@@ -2911,7 +2911,7 @@ a:focus {
   height: 35px;
   line-height: 35px;
   /*span{vertical-align: top;}
-					.icon-slack{font-size: 15px; margin-top: 9px;}*/
+					.icon-telegram{font-size: 15px; margin-top: 9px;}*/
 }
 #globalMenu .menu-wrap .menu-contents .mobile-links ul.gen {
   border-top: 1px solid rgba(71, 96, 142, 0.5);
@@ -5379,7 +5379,7 @@ a:focus {
 /*! GLOBAL: FOOTER */
 #globalFooter {
   min-height: 1071px;
-  padding-top: 355px;
+  padding-top: 430px;
 }
 #globalFooter.on .base {
   -webkit-animation: floater3 infinite 3s ease-in-out;
@@ -5444,7 +5444,7 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
 }
-#globalFooter .cta-btn .icon-slack {
+#globalFooter .cta-btn .icon-telegram {
   font-size: 20px;
   margin-left: 12px;
 }
@@ -5925,6 +5925,9 @@ a:focus {
     right: 5px;
     top: 20px;
   }
+  #globalFooter .factory {
+    margin-left: -280px;
+  }
 }
 /*! mq: 885 */
 @media screen and (max-width: 885px) {
@@ -6038,7 +6041,7 @@ a:focus {
   }
   #hero .text {
     padding-top: 0px;
-    max-width: 350px;
+    max-width: 500px;
   }
   #hero .text p {
     font-size: 22px;
@@ -6264,7 +6267,7 @@ a:focus {
     height: 830px;
     margin-left: 0px;
     top: auto;
-    left: 300px;
+    left: 340px;
     bottom: -20px;
   }
   #globalFooter .factory .base {
