@@ -1966,6 +1966,14 @@ Updates
 .updates article:not(:last-child) {
   border-bottom: 1px solid #dadfe8;
 }
+.updates article header {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .updates article header h3 {
   width: 58px;
   height: 51px;
