@@ -36,7 +36,7 @@
     </head>
     <body class="">
         <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <p class="browserupgrade">현재 <strong>오래된</strong> 브라우저를 사용중입니다. <a href="http://browsehappy.com/">새로운 버전의 브라우저</a> 를 사용하여 보안과 유저경험을 향상시킬 수 있습니다.</p>
         <![endif]-->
 
         <!--Loading Animation-->
