@@ -1,0 +1,441 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>district0x | FAQ</title>
+        <meta name="description" content="A platform for the creation, maintenance, and governance of decentralized marketplaces and classified ad service applications. Powered by Ethereum and IPFS.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <meta property="og:title" content="district0x"/>
+        <meta property="og:image" content="https://district0x.io/images/district0x-1200x630.png"/>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+
+        <!--Icons-->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+        <link rel="manifest" href="../favicons/manifest.json">
+        <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#2c398f">
+        <link rel="shortcut icon" href="../favicons/favicon.ico">
+        <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <!--TypeKit-->
+
+        <script src="https://use.typekit.net/zhu6uux.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <link rel="stylesheet" href="../css/singles/normalize.css">
+        <link href="../css/icons.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/singles/style.css">
+    </head>
+    <body class="">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">현재 <strong>오래된</strong> 브라우저를 사용중입니다. <a href="http://browsehappy.com/">새로운 버전의 브라우저</a> 를 사용하여 보안과 유저경험을 향상시킬 수 있습니다.</p>
+        <![endif]-->
+
+        <!--Loading Animation-->
+
+        <div id="loader">
+<!--
+            <div class="loader-logo">
+                <img src="../images/loader-icon.png" class="spacer">
+            </div>
+            <div class="blob-bg-anim">
+                <div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+                <div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+                <div class="blobmover blob" data-num="2"><div class="floater"><div class="icon icon-blob3"></div></div></div>
+                <div class="blobmover blob" data-num="3"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+                <div class="blobmover blob" data-num="4"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+                <div class="blobmover blob" data-num="5"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+            </div>
+-->
+        </div>
+
+        <!--Main Header-->
+
+        <header class="main">
+            <div class="container">
+                <div class="site-logo">
+					<a href="../">
+                        <img src="../images/site-logo.svg" alt="district0x">
+                    </a>
+                </div>
+                <nav class="desktop">
+                    <ul>
+                       <li><a target="_blank" href="https://blog.district0x.io/"><span>Blog</span></a></li>
+                       <li><a href="../team/"><span>Team</span></a></li>
+						<li><a href="../transparency/"><span>Transparency</span></a></li>
+						<li><a href="../faq/" class="on"><span>FAQ</span></a></li>
+                        <li class="icon"><a href="https://twitter.com/district0x" target="_blank"><span class="icon-twitter"><span class="visuallyhidden">Twitter</span></span></a></li>
+                        <li class="icon"><a href="https://blog.district0x.io" target="_blank"><span class="icon-medium"><span class="visuallyhidden">Medium</span></span></a></li>
+                        <li class="icon"><a href="https://github.com/district0x"  target="_blank"><span class="icon-github"><span class="visuallyhidden">Github</span></span></a></li>
+						<li class="icon"><a href="https://t.me/district0x" target="_blank"><span class="icon-telegram"></span></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Mobile Menu-->
+
+        <div class="mobile-menu">
+            <div class="menu-icon">
+                <div class="bg"><img src="../images/menu-closedbg.png" class="spacer"></div>
+            </div>
+
+            <div class="menu-wrap">
+
+                <div class="menu-blob">
+                    <div class="blob-bg-anim">
+                        <div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+                        <div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+                        <div class="blobmover blob" data-num="2"><div class="floater"><div class="icon icon-blob3"></div></div></div>
+                        <div class="blobmover blob" data-num="3"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+                        <div class="blobmover blob" data-num="4"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+                        <div class="blobmover blob" data-num="5"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+                    </div>
+                </div>
+
+                <div class="menu-contents">
+                    <div class="mobile-logo"><img src="../images/logo-mobile@2x.png" class="spacer"></div>
+
+                    <div class="mobile-top-links mob">
+						<nav>
+							<ul>
+								<li><a target="_blank" href="https://blog.district0x.io/"><span>Blog</span></a></li>
+								<li><a href="../team/"><span>Team</span></a></li>
+								<li><a href="../transparency/"><span>Transparency</span></a></li>
+								<li><a href="../faq/"><span>FAQ</span></a></li>
+							</ul>
+						</nav>
+					</div>
+
+                    <div class="description">
+                        <p>A network of decentralized markets and communities. Create, operate, and govern. Powered by Ethereum, Aragon, and IPFS.</p>
+                    </div>
+
+                    <nav class="ctas">
+                        <ul>
+                            <li><a href="https://district0x.io/docs/district0x-whitepaper.pdf" target="_blank" class="cta-btn">White Paper</a></li>
+                            <li><a href="https://vote.district0x.io" target="_blank" class="cta-btn">Vote For the Next Districts</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="social">
+                        <ul>
+                            <li class="icon"><a href="https://twitter.com/district0x" target="_blank"><span class="icon-twitter"><span class="visuallyhidden">Twitter</span></span></a></li>
+                            <li class="icon"><a href="https://blog.district0x.io" target="_blank"><span class="icon-medium"><span class="visuallyhidden">Medium</span></span></a></li>
+                            <li class="icon"><a href="https://github.com/district0x" target="_blank"><span class="icon-github"><span class="visuallyhidden">Github</span></span></a></li>
+							<li class="icon"><a href="https://t.me/district0x" target="_blank"><span class="icon-telegram"></span></a>
+                        </ul>
+                    </nav>
+
+                    <a class="email" href="mailto:hello@district0x.io">hello@district0x.io</a>
+
+                </div>
+            </div>
+
+            <div class="menuLines">
+                <div>
+                    <div class="menuLine top"></div>
+                    <div class="menuLine mid"></div>
+                    <div class="menuLine bottom"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main Page Content-->
+
+        <main>
+
+           <!--Team-->
+
+            <section id="faq">
+                <div class="container">
+                    <h2><span class="dsk">자주묻는 질문(FAQ)</span><span class="mob">FAQ</span></h2>
+
+
+                    <div class="faq-wrap">
+
+	                    <h4>디스트릭트0x 네트워크</h4>
+
+	                    <div class="faq-question">
+		                    <div class="question">
+			                    <h2>District0x란 무엇인가요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트0x는 탈중앙화된 마켓과 커뮤니티의 공동체입니다. 이더리움 네트워크에서 구동되는 스마트컨트랙트의 프레임워크로써 존재합니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트0x로 할 수 있는것은 무엇인가요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트0x는 탈중앙화된 거버넌스와 협력 및 의사결정이 가능하고 또 그것들이 발전할 수 있는 조직과 공동체를 만드는 것에 집중합니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트들은 무엇인가요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트들은 디스트릭트0x네트워크에 존재하는 탈중앙화된 독립체들이며, d0xinfra로 일컬어지는 표준화된 이더리움 스마트컨트랙트와 프론트앤드 라이브러리에 기반합니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트를 만드는 데 드는 비용이 있나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>아니오, 디스트릭트를 만드는 것에 드는 비용은 전혀 계획된 것이 없습니다. 디스트릭트를 만드는 것에는 등록소(District registry)에 환불가능한 보증금을 예치할 것을 요구합니다. 이 보증금은 해당 디스트릭트가 네트워크에 부가가치를 가져오지 않거나 악의적이라고 여겨질 경우 '도전'과정을 거쳐 몰수될 수 있습니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>어떤 종류의 프로젝트가 디스트릭트를 활용할 수 있을까요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>우리는 거의 모든 유형의 communal marketplace들이 디스트릭트를 통해 세워질 수 있다고 생각합니다. 해당 프로젝트가 게시판, 게시글 검색 및 필터링, 순위나 평판시스템, 결제수단의 지원을 필요로 한다면 디스트릭트는 여기에 딱 맞는 수단입니다. 현재의 디스트릭트 제안들은 여기서 찾아볼 수 있습니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트는 각각의 고유한 토큰을 사용할 수 있나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>네, 거버넌스 목적 외의 부가적인 기능을 위해 특정 디스트릭트가 해당 디스트릭트만의 고유한 토큰을 만들 수 있습니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트 내의 의결권은 누가 갖게되나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>초기의 디스트릭트 생성자가 최초의 의결권을 갖습니다. 따라서 그들은 디스트릭트 내규를 입맛에 맞게 만들고 해당 디스트릭트의 전적인 통제권을 가질 수도 있습니다. 그러나 이러한 행위는 그들이 크고 활동적인 디스트릭트를 개발하는 데에는 불리할 것입니다. 다만 특정 모델에서는 이러한 방법이 선호될 수도 있겠습니다.</p>
+				            </div></div> 
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>좋은 디스트릭트를 판가름하는 기준은 무엇인가요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트0x 토큰 소유자들 스스로가 한 디스트릭트가 네트워크 전체에 이익이 되는지 악영향을 끼치는지 디스트릭트 등록소를 통해 판단합니다. 이를 통해 마켓플레이스의 질을 제고할 뿐만 아니라 부도덕하거나 네트워크 전체에 위협을 가하는 행위를 DNT 소유자들이 사전에 예방하게 됩니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트들은 사람들 눈에 어떻게 비춰질까요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>각각의 디스트릭트들이 완벽히 독창적으로 보일 수 있습니다. 우리는 프론트앤드 라이브러리를 설계함에 있어 시각적인 측면이 자유롭게 디자인될 수 있도록 고려했으나 선택적으로 사용할 수 있는 사전 제작된(pre-made) 구성 요소들을 포함했습니다. 우리는 이러한 요소들을 개발팀이 직접 제작한 디스트릭트들에 사용할 것 입니다. <a href="https://ethlance.com/">Ethlance.</a>에서 보여지듯 현재 우리는 이러한 요소들에 머티리얼 디자인(Material Design)을 채용했으며, 추후 더 나은 솔루션이 나타날 경우 변경될 수 있습니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트0x 네트워크에 나타날 첫번째 디스트릭트는 무엇인가요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+						<p> <a href="https://ethlance.com/">이드랜스(Ethlance)</a> 는 가장 처음 만들어진 디스트릭트이며, 2017년 1월 29일 이더리움 메인넷에 론칭되었습니다. 뒤를 이어<a href="https://namebazaar.io/">네임바자(namebazaar)</a>를 2017년 10월 24일 이더리움 메인넷에 선보였고, 추후에는 <a href="https://memefactory.io/">밈팩토리(Memefactory)</a>를 개발하여 메인넷에 론칭하려 합니다. 네 번째 디스트릭트는 현재 토큰 소유자들이 결정하는 중이며, 그 현황은<a href="https://vote.district0x.io/">디스트릭트0x 투표 앱</a>에서 확인할 수 있습니다.</p>
+				            </div></div>
+				    	</div>
+			    		<div class="faq-question">
+		                    <div class="question">
+			                    <h2>d0xINFRA는 무엇인가요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+						<p>d0xINFRA는 이더리움 스마트컨트랙트와 프론트앤드 라이브러리로 이루어진 표준화된 오픈소스 프레임워크입니다. 네임바자와 밈팩토리의 개발과 더불어, 디스트릭트0x 팀은 d0xinfra의 초기 이터레이션(iteration)을 개발하고 있으며, 이를 통해 다른 개발 팀들이 그들만의 디스트릭트를 만들 수 있도록 할 것입니다.</p>
+				            </div></div>
+				    	</div>
+            				 <div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트0x는 어떻게 수익을 창출하나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+						<p>디스트릭트0x는 오픈소스 소프트웨어 프로젝트입니다. 우리는 중앙화된 독립체들처럼 수익을 창출하려 하지 않으며, 대신에 우리는 커뮤니티 기반 마켓플레이스에 있어 그것의 개발과 거버넌스를 탈중앙화할 수 있는 소프트웨어를 만들고자 합니다.</p>
+				            </div></div>
+				    	</div>
+			  		  <div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트0x가 수익을 창출할 계획이 없다면 어떻게 지속적으로 운영될 수 있나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+						<p>디스트릭트0x 프로젝트의 최종목표는 개발자, 토큰 소유자 및 유저의 지속적인 참여를 유도하는 인센티브 시스템을 개발하는 것 입니다. 우리가 가용할 수 있는 기술은 우리가 중앙화된 특정 조직에 의존하지 않고도 마켓플레이스에 협력의 시스템을 구축할 수 있도록 하며, 이는 디스트릭트0x 개발팀에 대한 의존도 포함하는 말입니다. 많은 스타트업과 마찬가지로 우리는 우리 앞에 놓인 자금조달 문제들을 이해하고 최종 목표에 도달 할 때까지 개발자금을 유지하기위해 부지런하고 또 신중하게 계획되어진 조치들을 취할 것입니다.</p>				            </div></div>
+				    	</div>
+
+				   </div>
+
+
+				   <div class="faq-wrap">
+
+	                    <h4>디스트릭트0x 네트워크 토큰 (DNT)</h4>
+
+	                    <div class="faq-question">
+		                    <div class="question">
+			                    <h2>DNT 예치(staking) 메커니즘은 어떻게 동작되나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트0x 네트워크 토큰은 네트워크 구성원들의 협력과 참여를 촉진하는 수단으로 사용됩니다. 디스트릭트0x 네트워크 토큰은 디스트릭트0x 팀이 어떤 디스트릭트를 만들어져야 할지 신호를 보내는 용도로 사용될 수 있고 또 디스트릭트0x 네트워크에 존재하는 어느 디스트릭트에라도 예치(stake)하여 해당 디스트릭트의 의결권을 얻는 용도로도 사용될 수 있습니다.</p>
+				                <p>의결권은 해당 디스트릭트의 브랜딩 전략, 디자인 결정, 보조모듈(auxiliary module)의 적용, 해당 보조모듈의 매개변수 설정, 수익금 분배 등 모든 것에 대한 합의를 도출하는데에 필요합니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트의 거버넌스는 어떤 식으로 동작하나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>어느 마켓플레이스가 디스트릭트0x 네트워크에 만들어지면, 이 마켓플레이스의 모든 의사결정 과정이 일어날, 그에 상응하는 아라곤 독립체가 생성됩니다. DNT는 해당 토큰의 소유자들이 자신의 토큰을 이 아라곤 독립체에 예치할 경우 의결권을 배분하여, 모든 인터넷 시민들이 해당 디스트릭트의 의사결정과정에 참여할 수 있도록 촉진합니다. 의결권은 디스트릭트의 행동강령, 수익 창출방법, 수익 분배방법 등 모든 것에 대한 합의를 도출하기 위해 사용될 것입니다.</p>
+				            </div></div>
+				    	</div>
+
+				    </div>
+
+
+				    <div class="faq-wrap">
+
+	                    <h4>디스트릭트0x 네트워크 모금행사</h4>
+
+	                    <div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트0x 네트워크 토큰의 총 발행량은 몇 개인가요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>총 10억개의 디스트릭트0x 토큰이 디스트릭트0x 제니시스 컨트랙트에서 발행되었습니다. 6억 개의 DNT는 2017년 8월 1일까지 진행된 ICO 참여자들에게 분배되었습니다. 1억 8천만개의 DNT는 추후의 모금행사를 대비해 비축되어있으며, 1억 9천 8백만개의 DNT는 디스트릭트0x 창업자들에게 2년의 지급기간을 거쳐 분배될 예정입니다. 나머지 2천 2백만개의 DNT는 프로젝트 고문단과 커뮤니티 보상 프로그램에 배정되어있습니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>창업자들에게 배정된 토큰에 매각기간제한이 있나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>창업자들, 조기 참여자들과 고문단에 배정된 토큰들은 지급기간을 거쳐 분배됩니다. 창업자와 고문단에 배정된 토큰은 24개월의 지급기간(vesting period)이 있으며 6개월의 클리프(cliff)기간을 둡니다. 조기 참여자의 토큰은 6개월의 지급기간과 3개월의 클리프를 둡니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>개발 로드맵은 어디서 찾을 수 있나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+						<p>우리 <a href="https://blog.district0x.io"> 블로그 </a> 에서 로드맵에 대한 가장 최신의 정보를 얻으실 수 있으며, 또한 우리는 블로그를 활용해 공지사항과 개발 진행내역을 알려드리고 있습니다.</p>
+				            </div></div>
+				    	</div>
+
+				    </div>
+
+
+				    <div class="faq-wrap">
+
+	                    <h4>개발팀</h4>
+
+	                    <div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트0x 는 어디에 위치해있나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트0x 창업자들은 샌프란시스코에 거주하고있습니다. 다른 코어팀 멤버들은 미국 바깥과 유럽에 있습니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>어떻게 프로젝트에 참여할 수 있나요?</h2>
+			                    <div class="icon-ar row-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>우리의 슬랙 채널에 들어오거나, 여러분이 보고싶은 디스트릭트에 대한 제안을 깃허브에 제출하거나, 이미 존재하는 제안들에 피드백을 남기거나, 네트워크에 꼭 필요하겠다고 생각되는 제안에 Carbon Vote를 통한 신호를 보냄으로써 참여할 수 있습니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>왜 디스트릭트0x란 이름을 선택했나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트0x 라는 이름은 두가지에서 파생되었습니다. "디스트릭트"는 네트워크를 구성하는 주춧돌인 마켓플레이스와 커뮤니티들을 의미하고, "0x" 는 이더리움 네트워크에 표하는 경의로써, 모든 이더리움 주소들의 가장 앞에 붙는 공통된 두 글자입니다."0x"라는 접두사는 컴퓨터 과학계 전반에 걸쳐 해시 값의 시작부분으로 사용됩니다.</p>
+				            </div></div>
+				    	</div>
+				    	<div class="faq-question">
+		                    <div class="question">
+			                    <h2>디스트릭트0x는 어떻게 발음하나요?</h2>
+			                    <div class="icon-arrow-down arr"></div>
+			                </div>
+			                <div class="answer"><div>
+				                <p>디스트릭트(District) - 제로(Zero) - 엑스(X) 입니다</p>
+				            </div></div>
+				    	</div>
+
+	                </div>
+
+
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+
+                <!--Footer-->
+
+                <footer class="main faq">
+                    <div class="container">
+                        <p>Contact: <a href="mailto:hello@district0x.com">hello@district0x.com</a></p>
+
+                        <div class="city-animation">
+                            <div class="city">
+                                <img src="../images/footer-city@2x.png" alt="">
+                                <div class="turbine">
+                                    <img src="../images/turbine-blue@2x.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <div class="footerblob"><img src="../images/faq-footerblob@2x.png"></div>
+
+        </main>
+
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.0.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="../js/vendor/jquery.matchHeight.min.js"></script>
+        <script src="../js/singles.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-100624852-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </body>
+</html>
