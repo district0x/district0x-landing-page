@@ -1,0 +1,1479 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>district0x</title>
+
+<meta name="description" content="탈중앙화된 마켓플레이스와 커뮤니티의 네트워크. 만들고, 운영하고, 관리하세요. 이더리움, 아라곤 및 IPFS에 기반합니다.">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta property="og:title" content="district0x"/>
+<meta property="og:image" content="https://district0x.io/images/district0x-1200x630.png"/>
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
+
+<script src="https://use.typekit.net/zhu6uux.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<link rel="shortcut icon" href="../images/favicon.png" />
+<link href="../css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="../css/icons.css" rel="stylesheet" type="text/css" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
+
+<script type="text/javascript">
+    (function(p,u,s,h){
+        p._pcq=p._pcq||[];
+        p._pcq.push(['_currentTime',Date.now()]);
+        s=u.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.src='https://cdn.pushcrew.com/js/655ef8d23afe9b00105fc1fa8ad8e691.js';
+        h=u.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+    })(window,document);
+</script>
+
+</head>
+
+
+
+<body class="cn">
+
+
+
+
+
+<!--! LOADER -->
+
+<div id="loader">
+	<div class="loader-logo"><img src="../images/loader-icon.png" class="spacer"></div>
+	<div class="blob-bg-anim">
+		<div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+		<div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+		<div class="blobmover blob" data-num="2"><div class="floater"><div class="icon icon-blob3"></div></div></div>
+		<div class="blobmover blob" data-num="3"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+		<div class="blobmover blob" data-num="4"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+		<div class="blobmover blob" data-num="5"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+	</div>
+</div>
+
+<!-- END LOADER -->
+
+
+
+
+
+<!--! GLOBAL: MENU -->
+
+<div id="globalMenu">
+	<div class="menu-icon">
+		<div class="bg"><img src="../images/menu-closedbg.png" class="spacer"></div>
+	</div>
+
+	<div class="menu-wrap">
+		<div class="menu-blob">
+			<div class="blob-bg-anim">
+				<div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+				<div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+				<div class="blobmover blob" data-num="2"><div class="floater"><div class="icon icon-blob3"></div></div></div>
+				<div class="blobmover blob" data-num="3"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+				<div class="blobmover blob" data-num="4"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+				<div class="blobmover blob" data-num="5"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+			</div>
+		</div>
+		<div class="menu-contents">
+			<div class="mobile-logo mob"><img src="../images/logo-mobile@2x.png" class="spacer"></div>
+			<div class="toplinks dsk">
+			<nav><ul>
+				<li><a href="../docs/district0x-whitepaper-ko.pdf" target="_blank" class="cta-btn"><span>White Paper</span><span class="icon-fill"></span></a></li>
+				<li><a href="https://t.me/district0x" target="_blank" class="cta-btn"><div class="hover-fill"></div><span>Join us on Telegram</span><span class="icon-telegram"></span></a></li>
+				<li><a href="https://vote.district0x.io" target="_blank" class="cta-btn"><div class="hover-fill"></div><span>Vote For the Next Districts</span><span class="icon-fill"></span></a></li>
+				<!--<li><a href="http://eepurl.com/cSfSiL" target="_blank" class="cta-btn"><div class="hover-fill"></div><span>Subscribe for Updates</span><span class="icon-fill"></span></a></li>-->
+			</ul></nav>
+			</div>
+			<div class="mobile-top-links mob">
+				<nav>
+					<ul>
+              <li><a href="../"><span>English</span></a></li>
+              <li><a href="cn/"><span>中文</span></a></li>
+  						<li><a href="team/"><span>Team</span></a></li>
+  						<li><a href="transparency/"><span>Transparency</span></a></li>
+  						<li><a href="faq/"><span>FAQ</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<nav id="globalNav">
+				<ul class="nav">
+					<li data-id="created"><span class="icon-arrow-right arr"></span><a href="#created">디스트릭트란?</a></li>
+					<li data-id="framework"><span class="icon-arrow-right arr"></span><a href="#framework">d0xINFRA 프레임워크</a></li>
+					<li data-id="governance"><span class="icon-arrow-right arr"></span><a href="#governance">아라곤을 통한 거버넌스</a></li>
+					<li data-id="districts"><span class="icon-arrow-right arr"></span><a href="#districts">디스트릭트0x의 디스트릭트들</a></li>
+					<li data-id="roadmap"><span class="icon-arrow-right arr"></span><a href="#roadmap">로드맵</a></li>
+					<li data-id="token"><span class="icon-arrow-right arr"></span><a href="#token">디스트릭트0x 네트워크 토큰</a></li>
+					<li data-id="build"><span class="icon-arrow-right arr"></span><a href="#build">다음으로는 무엇을 만들어야 할까요?</a></li>
+					<li data-id="team"><span class="icon-arrow-right arr"></span><a href="#team">디스트릭트0x 팀</a></li>
+					<li data-id="supporters"><span class="icon-arrow-right arr"></span><a href="#supporters">우리의 지원자들</a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="https://twitter.com/district0x" target="_blank"><span class="icon-twitter"></span></a>
+					<li><a href="https://blog.district0x.io" target="_blank"><span class="icon-medium"></span></a>
+					<li><a href="https://github.com/district0x" target="_blank"><span class="icon-github"></span></a>
+					<li><a href="https://www.reddit.com/r/district0x/" target="_blank"><span class="icon-reddit"></span></a>
+				</ul>
+			</nav>
+			<div class="toplinks mobile-links mob">
+				<nav><ul class="gen">
+					<li><a href="../docs/district0x-whitepaper-ko.pdf" target="_blank" class="cta-btn">White Paper</a></li>
+					<li><a href="https://vote.district0x.io" target="_blank" class="cta-btn">Vote For the Next Districts</a></li>
+					<!--<li><a href="http://eepurl.com/cSfSiL" target="_blank" class="cta-btn">Subscribe For Updates</a></li>-->
+				</ul></nav>
+				<ul class="social">
+					<li><a href="https://twitter.com/district0x" target="_blank"><span class="icon-twitter"></span></a>
+					<li><a href="https://blog.district0x.io" target="_blank"><span class="icon-medium"></span></a>
+					<li><a href="https://github.com/district0x" target="_blank"><span class="icon-github"></span></a>
+					<li><a href="https://t.me/district0x" target="_blank"><span class="icon-telegram"></span></a>
+					<li><a href="https://www.reddit.com/r/district0x" target="_blank"><span class="icon-reddit"></span></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="menuLines"><div>
+		<div class="menuLine top"></div><div class="menuLine mid"></div><div class="menuLine bottom"></div>
+	</div></div>
+</div>
+
+<!-- END MENU -->
+
+
+
+
+
+<!--! GLOBAL: STICKY BAR -->
+
+<div class="sticky">
+	<div class="shad"></div>
+	<div class="blocker"></div>
+	<div class="contentContainer spaced">
+
+		<div><img src="../images/logo@2x.png" class="logo"></div>
+		<div class="toplinks">
+			<nav><ul>
+				<li><a href="../"><span>English</span></a></li>
+				<li><a target="_blank" href="https://blog.district0x.io/"><span>Blog</span></a></li>
+				<li><a href="team/index.html"><span>Team</span></a></li>
+				<li><a href="transparency/index.html"><span>Transparency</span></a></li>
+				<li><a href="../docs/district0x-whitepaper-ko.pdf" target="_blank" class="cta-btn"><span>White Paper</span><span class="icon-fill"></span></a></li>
+				<li><a href="https://t.me/district0x" target="_blank" class="cta-btn"><div class="hover-fill"></div><span>Join us on Telegram</span><span class="icon-telegram"></span></a></li>
+			</ul></nav>
+		</div>
+
+	</div>
+</div>
+
+<!-- END STICKY BAR -->
+
+
+
+<!--! SECTION: 0 HERO -->
+
+<section id="hero" class="hasAnim">
+
+	<div class="factory">
+		<div class="base">
+			<div class="hero-blobs part"><img src="../images/hero-blobs.png"></div>
+
+			<div class="cloud part" data-num="1"><img src="../images/parts/hero-cloud1.png"></div>
+			<div class="cloud part" data-num="2"><img src="../images/parts/hero-cloud2.png"></div>
+			<div class="cloud part" data-num="3"><img src="../images/parts/hero-cloud3.png"></div>
+
+			<div class="hero-factory part">
+				<img src="../images/hero-citybg.png" class="city">
+
+				<div class="pipeline" data-num="1">
+					<div class="pipe-data" data-num="1"><div></div></div>
+					<div class="pipe-data" data-num="2"><div></div></div>
+					<div class="pipe-data" data-num="3"><div></div></div>
+					<div class="pcover"><img src="../images/parts/hero-pipecover1.png"></div>
+				</div>
+				<div class="pipeline" data-num="2">
+					<div class="pipe-data" data-num="1"><div></div></div>
+					<div class="pipe-data" data-num="2"><div></div></div>
+					<div class="pipe-data" data-num="3"><div></div></div>
+					<div class="pcover"><img src="../images/parts/hero-pipecover2.png"></div>
+				</div>
+
+				<div class="fan" data-num="1">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="2">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="3">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="4">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="5">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="6">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+
+				<div class="turbine" data-num="1">
+					<img src="../images/parts/turbine-full.png">
+					<div class="wheel"><img src="../images/parts/turbine-blade-whirl.png"></div>
+					<img src="../images/parts/turbine-blade-cover.png" class="cover">
+				</div>
+				<div class="turbine" data-num="2">
+					<img src="../images/parts/turbine-full.png">
+					<div class="wheel"><img src="../images/parts/turbine-blade-whirl.png"></div>
+					<img src="../images/parts/turbine-blade-cover.png" class="cover">
+				</div>
+				<div class="turbine" data-num="3"><div>
+					<img src="../images/parts/turbine-full.png">
+					<div class="wheel"><img src="../images/parts/turbine-blade-whirl-blue.png"></div>
+					<img src="../images/parts/turbine-blade-cover.png" class="cover">
+				</div></div>
+				<div class="turbine" data-num="4">
+					<img src="../images/parts/turbine-full.png">
+					<div class="wheel"><img src="../images/parts/turbine-blade-whirl.png"></div>
+					<img src="../images/parts/turbine-blade-cover.png" class="cover">
+				</div>
+
+				<div class="glow-dot" data-num="1"></div>
+				<div class="glow-dot" data-num="2"></div>
+
+				<div class="blink-cover" data-num="1"></div>
+				<div class="blink-cover" data-num="2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contentContainer">
+
+		<div class="toplinks">
+			<nav><ul>
+				<li><a href="../"><span>English</span></a></li>
+				<li><a target="_blank" href="https://blog.district0x.io/"><span>Blog</span></a></li>
+				<li><a href="team/index.html"><span>Team</span></a></li>
+				<li><a href="transparency/index.html"><span>Transparency</span></a></li>
+				<li><a href="../docs/district0x-whitepaper-ko.pdf" target="_blank" class="cta-btn"><span>White Paper</span><span class="icon-fill"></span></a></li>
+				<li><a href="https://t.me/district0x" target="_blank" class="cta-btn"><div class="hover-fill"></div><span>Join us on Telegram</span><span class="icon-telegram"></span></a></li>
+			</ul></nav>
+		</div>
+
+		<div class="text">
+			<img src="../images/logo@2x.png" class="logo">
+			<p>탈중앙화된 마켓플레이스와 커뮤니티의 네트워크. 만들고, 운영하고, 관리하세요. 이더리움, 아라곤 및 IPFS에 기반합니다.</p>
+			<div class="vote-seal"><div>
+				<img src="../images/parts/vote-seal-bg.png" class="spacer">
+				<div class="hand-mask">
+					<div class="hand" data-num="1"><img src="../images/parts/vote-hand1.png"></div>
+					<div class="hand" data-num="2"><img src="../images/parts/vote-hand2.png"></div>
+					<div class="hand" data-num="3"><img src="../images/parts/vote-hand3.png"></div>
+				</div>
+				<div class="vote-txt">VOTE</div>
+				<div class="vote-star" data-num="1"><div class="icon-starbg bg"></div><img src="../images/parts/vote-star.png"></div>
+				<div class="vote-star" data-num="2"><div class="icon-starbg bg"></div><img src="../images/parts/vote-star.png"></div>
+				<div class="vote-star" data-num="3"><div class="icon-starbg bg"></div><img src="../images/parts/vote-star.png"></div>
+				<div class="cta-wrap"><a href="https://vote.district0x.io" target="_blank" class="cta-btn"><span>다음 디스트릭트에 투표하기</span></a></div>
+			</div></div>
+			<!--<a href="http://eepurl.com/cSfSiL" target="_blank" class="cta-btn"><div class="hover-fill"></div><span>Subscribe for Updates</span></a>-->
+		</div>
+	</div>
+</section>
+
+<!-- END HERO -->
+
+<!--! SECTION: 1 CREATED -->
+
+<section id="created" class="hasAnim">
+	<div class="contentContainer">
+		<div class="row spaced">
+			<div class="col left">
+				<h2>디스트릭트란?</h2>
+				<p>디스트릭트들이란 디스트릭트0x 네트워크에 탈중앙화된 자율 조직으로써 존재하는 마켓 플레이스 및 커뮤니티입니다. 모든 인터넷 시민들은 이 네트워크에 무료로 디스트릭트들을 배포 할 수 있습니다. 영원히 말이죠!</p>
+				<p>모든 디스트릭트들은 다음과 같은 주요 기능을 갖고있습니다.</p>
+			</div>
+			<div class="col right">
+				<div class="created-blocks spaced">
+					<div class="created-block" data-num="1">
+						<img src="../images/created-cover1.png" class="spacer filler">
+						<div class="contents">
+							<div class="create-image">
+								<div class="postit part"><img src="../images/parts/created-listing.png"></div>
+								<div class="postit-yellow part"><img src="../images/parts/created-listing-yellow.png"></div>
+								<div class="postit-line part" data-num="1"><img src="../images/parts/created-listing-line.png"><div></div></div>
+								<div class="postit-line part" data-num="2"><img src="../images/parts/created-listing-line.png"><div></div></div>
+								<div class="postit-cover"></div>
+							</div>
+
+							<h3>게시와 등록</h3>
+						</div>
+						<div class="cover"><img src="../images/created-cover1.png"></div>
+					</div>
+					<div class="created-block" data-num="2">
+						<img src="../images/created-cover2.png" class="spacer filler">
+						<div class="contents">
+							<div class="create-image">
+								<!--<img src="../images/created-search@2x.png" class="spacer">-->
+								<div class="searchbg part"><img src="../images/parts/created-search.png"></div>
+								<div class="mag part"><img src="../images/parts/created-mag.png"></div>
+								<div class="search-dials">
+									<div class="search-dial part" data-num="1"></div>
+									<div class="search-dial part" data-num="2"></div>
+								</div>
+							</div>
+
+							<h3>검색과 필터링</h3>
+						</div>
+						<div class="cover"><img src="../images/created-cover2.png"></div>
+					</div>
+					<div class="created-block" data-num="3">
+						<img src="../images/created-cover3.png" class="spacer filler">
+						<div class="contents">
+							<div class="create-image">
+								<div class="trophy part"><img src="../images/parts/created-trophy.png"></div>
+								<div class="trophy-stars part">
+									<div class="star part" data-num="1"><img src="../images/parts/rank-star.png"></div>
+									<div class="star part" data-num="2"><img src="../images/parts/rank-star.png"></div>
+									<div class="star part" data-num="3"><img src="../images/parts/rank-star.png"></div>
+								</div>
+							</div>
+
+							<h3>랭킹과 평판</h3>
+						</div>
+						<div class="cover"><img src="../images/created-cover3.png"></div>
+					</div>
+					<div class="created-block" data-num="4">
+						<img src="../images/created-cover4.png" class="spacer filler">
+						<div class="contents">
+							<div class="create-image">
+								<div class="invoice part"><img src="../images/parts/created-invoice.png"></div>
+								<div class="invoice-line part" data-num="1"><div></div></div>
+								<div class="invoice-line part" data-num="2"><div></div></div>
+								<div class="invoice-line part" data-num="3"><div></div></div>
+							</div>
+
+							<h3>지불과 송장 발행</h3>
+						</div>
+						<div class="cover"><img src="../images/created-cover4.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- END CREATED -->
+
+
+
+
+
+<!--! SECTION: 2 FRAMEWORK -->
+
+<section id="framework" class="hasAnim" data-dif-mobile="50">
+
+	<div class="factory">
+		<div class="base">
+			<img src="../images/framework-blob.png" class="spacer">
+
+			<div class="pipeline" data-num="1">
+				<div class="pipe-data" data-num="1"><div></div></div>
+				<div class="pipe-data" data-num="2"><div></div></div>
+				<div class="pipe-data" data-num="3"><div></div></div>
+				<div class="pipe-data" data-num="4"><div></div></div>
+				<div class="pipe-data" data-num="5"><div></div></div>
+				<div class="pipe-data" data-num="6"><div></div></div>
+			</div>
+
+			<div class="pipeline" data-num="2">
+				<div class="pipe-data" data-num="1"><div></div></div>
+				<div class="pipe-data" data-num="2"><div></div></div>
+				<div class="pipe-data" data-num="3"><div></div></div>
+				<div class="pipe-data" data-num="4"><div></div></div>
+				<div class="pipe-data" data-num="5"><div></div></div>
+				<div class="pipe-data" data-num="6"><div></div></div>
+				<div class="pipe-data" data-num="7"><div></div></div>
+				<div class="pipe-data" data-num="8"><div></div></div>
+				<div class="pipe-data" data-num="9"><div></div></div>
+			</div>
+
+			<img src="../images/framework-bg.png" class="spacer">
+
+			<div class="framework-token part">
+				<div class="token part"><img src="../images/parts/token.png"></div>
+				<div class="books part"><img src="../images/parts/framework-books.png"></div>
+			</div>
+
+			<div class="framework-labels">
+				<div class="fw-label" data-num="0"><p>디스트릭트0x 네트워크 토큰</p><div class="line"></div></div>
+				<div class="fw-label" data-num="1"><p>d0xINFRA 이더리움<br>스마트컨트랙트 &<br>라이브러리</p><div class="line"></div></div>
+				<div class="fw-label" data-num="2"><p>디스트릭트 고유의<br>스마트 컨트랙트</p><div class="line"></div></div>
+				<div class="fw-label" data-num="3"><p>디스트릭트 고유의<br>프론트앤드</p><div class="line"></div></div>
+				<div class="fw-label" data-num="4"><p>아라곤<br>거버넌스</p><div class="line"></div></div>
+				<div class="fw-bubble" data-num="1"><p>Web3.js</p></div>
+				<div class="fw-bubble" data-num="2"><p>d0xINFRA <br>프론트앤드 라이브러리</p></div>
+				<div class="fw-bubble" data-num="3"><p>IPFS기반 파일저장</p></div>
+			</div>
+
+			<div class="framework-code part" data-num="1">
+				<img src="../images/parts/codelines-mob.png" class="code-mob">
+				<div class="codehold"></div>
+			</div>
+			<div class="framework-code part" data-num="2">
+				<img src="../images/parts/codelines-mob.png" class="code-mob">
+				<div class="codehold"></div>
+			</div>
+			<div class="framework-code part" data-num="3">
+				<img src="../images/parts/codelines-mob.png" class="code-mob">
+				<div class="codehold"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="contentContainer">
+		<div class="row spaced">
+			<div class="col left"></div>
+			<div class="col right"><div>
+				<h2>d0xINFRA 프레임워크</h2>
+				<p>모든 디스트릭트들의 근간을 이루는 것은 d0xINFRA 프레임워크, 즉 디스트릭트의 기본적인 기능들을 제공하기위해 IPFS에 분산저장되어있는 이더리움 스마트 컨트랙트와 프론트 앤드 라이브러리의 집합입니다.</p>
+				<p>d0xINFRA는 개방적이고 확장 가능하도록 설계되었으며, 보조 모듈(auxiliary module)을 이용해 디스트릭트에 특별한 기능을 적용하거나 향상시킬 수 있습니다.</p>
+			</div></div>
+
+		</div>
+	</div>
+</section>
+
+<!-- END FRAMEWORK -->
+
+
+
+
+
+<!--! SECTION: 3 GOVERNANCE -->
+
+<section id="governance" class="hasAnim" data-dif="300" data-dif-mobile="220">
+	<div class="pipe">
+		<div class="pipeline">
+			<div class="pipe-data" data-num="1"><div></div></div>
+			<div class="pipe-data" data-num="2"><div></div></div>
+			<div class="pipe-data" data-num="3"><div></div></div>
+		</div>
+
+		<img src="../images/parts/governance-pipe.png" width="228" class="dsk">
+		<img src="../images/parts/framework-straightpipe.png" class="mob">
+	</div>
+	<div class="contentContainer">
+		<div class="logo-wrap"><img src="../images/logo-aragon@2x.png" class="logo spacer"></div>
+		<h2>아라곤을 통한 거버넌스</h2>
+		<p>아라곤은 막을 수 없는 가상 조직과 독립체들을 만들어내는, 혁신적으로 새로운 플랫폼입니다. 디스트릭트0x 네트워크에서 한 디스트릭트가 생성되면 그에 상응하는 아라곤 독립체가 만들어지며, 해당 디스트릭트의 모든 거버넌스와 의사결정은 해당 아라곤 독립체에서 수행됩니다.</p>
+
+	</div>
+</section>
+
+<!-- END GOVERNANCE -->
+
+
+
+
+
+<!--! BLOB WRAP MID -->
+
+<div class="big-blob mid">
+<div class="blob-mid-bg"></div>
+<div class="blob-mid-cover top"><img src="../images/midblob-top.png" class="spacer"></div>
+<div class="blob-mid-cover bot"><img src="../images/midblob-bot.png" class="spacer"></div>
+
+
+
+
+
+<!--! SECTION: 4 DISTRICTS -->
+
+<section id="districts" class="hasAnim" data-dif="300">
+	<div class="factory">
+		<div class="clouds part"><img src="../images/parts/districts-clouds.png"></div>
+
+		<div class="part left">
+			<div class="turbine" data-num="1">
+				<img src="../images/parts/turbine-full.png">
+				<div class="wheel"><img src="../images/parts/turbine-blade-whirl.png"></div>
+				<img src="../images/parts/turbine-blade-cover.png" class="cover">
+			</div>
+			<div class="turbine" data-num="2">
+				<img src="../images/parts/turbine-full.png">
+				<div class="wheel"><img src="../images/parts/turbine-blade-whirl-blue.png"></div>
+				<img src="../images/parts/turbine-blade-cover.png" class="cover">
+			</div>
+			<div class="turbine" data-num="3"><div>
+				<img src="../images/parts/turbine-full.png">
+				<div class="wheel"><img src="../images/parts/turbine-blade-whirl-blue.png"></div>
+				<img src="../images/parts/turbine-blade-cover.png" class="cover">
+			</div></div>
+
+			<img src="../images/parts/districts-leftbg.png" class="district-left">
+			<div class="blink-cover"></div>
+		</div>
+
+		<div class="part right district-city">
+			<div class="glow-dot"></div>
+			<div class="fan-set">
+				<div class="fan" data-num="1">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="2">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+			</div>
+
+			<div class="pipeline" data-num="3">
+				<div class="pipe-data" data-num="1"><div></div></div>
+				<div class="pipe-data" data-num="2"><div></div></div>
+			</div>
+
+			<div class="city part"><img src="../images/parts/districts-cityright.png"></div>
+		</div>
+	</div>
+
+	<div class="contentContainer">
+		<h2>디스트릭트0x의 디스트릭트들</h2>
+
+		<div class="district-boxes spaced">
+			<div class="district-box" data-num="1">
+
+				<div class="blob-bg-anim">
+					<div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+					<div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+					<div class="blobmover blob" data-num="2"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+				</div>
+
+				<div class="wrap">
+				<img src="../images/districts-img1.png">
+				<h3>이드랜스(Ethlance)</h3>
+				<p>이드랜스는 2017 년 1 월에 론칭되었으며, 프리랜서와 풀타임 업무를 아우르는, 모두를 위한 탈중앙화된 구직 시장입니다. 이드랜스는 디스트릭트0x 네트워크의 첫 번째 디스트릭트이며 영구적으로 운영될 것입니다.</p>
+				</div>
+			</div>
+			<div class="district-box" data-num="2">
+
+				<div class="blob-bg-anim" data-num="2"><div>
+					<div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+					<div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+				</div></div>
+
+				<div class="wrap">
+                <img src="../images/ens-bazaar@2x.png" alt="ENS Bazaar">
+				<h3>네임 바자(Name Bazaar)</h3>
+					<p>2017 년 10 월에 출시된 네임바자는 ENS(Ethereum Name Service)를 통해 등록된 이름을 갖고 있는 사람들 간의 이름 교환을 위한 P2P 마켓으로, 구입가능한 ENS 이름을 쉽게 검색 할 수있는 레지스트리를 제공합니다.</p>
+				</div>
+			</div>
+			<div class="district-box" data-num="3">
+
+				<div class="blob-bg-anim" data-num="3"><div>
+					<div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+					<div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+					<div class="blobmover blob" data-num="2"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+				</div></div>
+
+				<div class="wrap">
+                <img src="../images/meme-factory@2x.png" alt="Meme Factory">
+				<h3>밈 팩토리(Meme Factory)</h3>
+					<p>세 번째로 만들어질 디스트릭트인 밈 팩토리는 이더리움 블록체인상에 희소한 디지털 자산을 만들기 위한 인터페이스와, 이 자산들의 교환을 위한 게시판 형태의 온라인 마켓을 제공합니다.</p>
+				</div>
+			</div>
+			<div class="district-box" data-num="4">
+
+				<div class="blob-bg-anim" data-num="2"><div>
+					<div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+					<div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+				</div></div>
+
+				<div class="wrap">
+				<img src="../images/districts-img2.png">
+				<h3>추후의 디스트릭트0x 프로젝트들</h3>
+				<p>디스트릭트0x 팀은 계속해서 디스트릭트0x 네트워크에 디스트릭트들을 배포 할 것이며, 동시에 탈중앙화된 마켓과 커뮤니티의 힘을 보여 주는 d0xINFRA 프레임 워크의 개선을 위한 샌드 박스 역할을 수행 할 것입니다.</p>
+				</div>
+			</div>
+			<div class="district-box" data-num="5">
+
+				<div class="blob-bg-anim" data-num="3"><div>
+					<div class="blobmover blob" data-num="0"><div class="floater"><div class="icon icon-blob2"></div></div></div>
+					<div class="blobmover blob" data-num="1"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+					<div class="blobmover blob" data-num="2"><div class="floater"><div class="icon icon-blob1"></div></div></div>
+				</div></div>
+
+				<div class="wrap">
+				<img src="../images/districts-img3.png">
+				<h3>당신만의 디스트릭트</h3>
+				<p>디스트릭트 생성 플랫폼이 개발되면 모든 인터넷 시민들이 디스트릭트0x 네트워크에 쉽게 디스트릭트를 만들 수 있습니다. 탈중앙화된 웹에 의해 구동되는 디스트릭트0x는 검열 및 중개자로부터 자유로운 디스트릭트 생성 환경을 제공할 것입니다.</p>
+				</div>
+			</div>
+			<div class="district-box filler" data-num="6"></div>
+		</div>
+	</div>
+</section>
+
+<!-- END DISTRICTS -->
+
+
+
+
+
+<!--! SECTION: 5 ROADMAP -->
+
+<section id="roadmap" class="hasAnim" data-dif="300">
+	<div class="sideblob"><img src="../images/roadmap-blob@2x.png"></div>
+
+	<div class="contentContainer spaced">
+
+		<div class="col left outer">
+			<h2>로드맵</h2>
+		</div>
+
+		<div class="col right outer">
+			<div class="roadmap-blocks">
+				<div class="roadmap-pipes">
+					<img src="../images/parts/roadmap-clouds.png" class="spacer">
+					<div class="pipeline" data-num="1">
+						<div class="pipe-data" data-num="1"><div></div></div>
+						<div class="pipe-data" data-num="2"><div></div></div>
+						<div class="pipe-data" data-num="3"><div></div></div>
+						<div class="pipe-data" data-num="4"><div></div></div>
+						<div class="pipe-data" data-num="5"><div></div></div>
+						<div class="pipe-data" data-num="6"><div></div></div>
+					</div>
+					<img src="../images/parts/roadmap-pipebg.png" class="spacer">
+				</div>
+
+				<div>
+				<div class="col left">
+
+					<div class="roadmap-block" data-num="1">
+						<div class="text">
+							<h3>모금기간 v0.1 이전</h3>
+							<ul>
+								<li><span class="bullet-check cn on"></span>백서 최종판 릴리즈</li>
+								<li><span class="bullet-check cn on"></span>외부기관을 통한 세 번의 디스트릭트0x 코드감사</li>
+							</ul>
+							<div class="roadmap-vo"><p>V0.1</p></div>
+						</div>
+						<div class="blockbg">
+							<img src="../images/parts/roadmap-floatbg1.png" class="base">
+							<div class="fan-set">
+								<div class="fan" data-num="1">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+								<div class="fan" data-num="2">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="roadmap-block mob" data-num="2">
+						<div class="text">
+							<h3>모금기간 v0.2 이전</h3>
+							<ul>
+								<li><span class="bullet-check cn"></span>d0xINFRA 개발</li>
+								<li><span class="bullet-check cn"></span>이드랜스의 d0xINFRA 이전</li>
+								<li><span class="bullet-check cn"></span>네임 바자와 밈 팩토리 개발</li>
+							</ul>
+							<div class="roadmap-vo"><p>V0.2</p></div>
+						</div>
+						<div class="blockbg">
+							<div class="glow-dot"></div>
+							<img src="../images/parts/roadmap-floatbg2.png" class="base">
+							<div class="fan-set">
+								<div class="fan" data-num="1">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+								<div class="fan" data-num="2">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="roadmap-block" data-num="3">
+						<div class="text">
+							<h3>모금기간 v0.3 이전</h3>
+							<ul>
+								<li><span class="bullet-check cn"></span>디스트릭트0x 네트워크에 추가로 5개의 디스트릭트 배치</li>
+								<li><span class="bullet-check cn"></span>디스트릭트0x 스테이킹 모듈과 거버넌스 모듈 개발</li>
+								<li><span class="bullet-check cn"></span>보조모듈 개발을 통한 디스트릭트의 확장성 확보</li>
+							</ul>
+							<div class="roadmap-vo"><p>V0.3</p></div>
+						</div>
+						<div class="blockbg">
+							<div class="glow-dot"></div>
+							<img src="../images/parts/roadmap-floatbg3.png" class="base">
+							<div class="fan-set">
+								<div class="fan" data-num="1">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+								<div class="fan" data-num="2">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="roadmap-block mob" data-num="4">
+						<div class="text">
+							<h3>모금기간 v0.3 이후</h3>
+							<ul>
+								<li><span class="bullet-check cn"></span>디스트릭트 생성 플랫폼 개발</li>
+								<li><span class="bullet-check cn"></span>보조모듈 등록소(registry)개발</li>
+								<li><span class="bullet-check cn"></span>디스트릭트 등록소(registry)개발</li>
+								<li><span class="bullet-check cn"></span>디스트릭트0x 토큰 보유자들에게 디스트릭트0x 프로젝트의 거버넌스를 이양</li>
+							</ul>
+							<div class="roadmap-vo"><p>V0.3</p></div>
+						</div>
+						<div class="blockbg">
+							<img src="../images/parts/roadmap-floatbg4.png" class="base">
+							<div class="fan-set">
+								<div class="fan" data-num="1">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+								<div class="fan" data-num="2">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col mid"></div>
+				<div class="col right">
+
+					<div class="roadmap-block" data-num="2">
+						<div class="text">
+							<h3>모금기간 v0.2 이전</h3>
+							<ul>
+								<li><span class="bullet-check cn"></span>d0xINFRA 개발</li>
+								<li><span class="bullet-check cn"></span>이드랜스의 d0xINFRA 이전</li>
+								<li><span class="bullet-check cn"></span>네임 바자와 밈 팩토리 개발</li>
+							</ul>
+							<div class="roadmap-vo"><p>V0.2</p></div>
+						</div>
+						<div class="blockbg">
+							<div class="glow-dot"></div>
+							<img src="../images/parts/roadmap-floatbg2.png" class="base">
+							<div class="fan-set">
+								<div class="fan" data-num="1">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+								<div class="fan" data-num="2">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="roadmap-block" data-num="4">
+						<div class="text">
+							<h3>모금기간 v0.3 이후</h3>
+							<ul>
+								<li><span class="bullet-check cn"></span>디스트릭트 생성 플랫폼 개발</li>
+								<li><span class="bullet-check cn"></span>보조모듈 등록소(registry)개발</li>
+								<li><span class="bullet-check cn"></span>디스트릭트 등록소(registry)개발</li>
+								<li><span class="bullet-check cn"></span>디스트릭트0x 토큰 보유자들에게 디스트릭트0x 프로젝트의 거버넌스를 이양</li>
+							</ul>
+							<div class="roadmap-vo"><p>V0.3</p></div>
+						</div>
+						<div class="blockbg">
+							<img src="../images/parts/roadmap-floatbg4.png" class="base">
+							<div class="fan-set">
+								<div class="fan" data-num="1">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+								<div class="fan" data-num="2">
+									<img src="../images/parts/wheel-fan.png">
+									<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div></div>
+		</div>
+
+	</div>
+</section>
+
+<!-- END ROADMAP -->
+
+
+
+
+
+</div>
+
+<!-- END BLOB WRAP -->
+
+
+
+
+
+<!--! SECTION: 6 TOKEN -->
+
+<section id="token" class="hasAnim" data-dif="300">
+	<div class="contentContainer">
+		<div class="row spaced">
+			<div class="col left">
+				<div class="factory">
+					<div class="base">
+						<img src="../images/token-bg.png" class="spacer">
+
+						<div class="token-mask part"><div class="token part"><img src="../images/parts/token.png"></div></div>
+
+						<div class="checkboxes">
+							<div class="checkbox part" data-num="1" data-rot="27"><img src="../images/parts/token-checkbox.png"></div>
+							<div class="checkbox part" data-num="2" data-rot="10"><img src="../images/parts/token-checkbox.png"></div>
+							<div class="checkbox part" data-num="3" data-rot="27"><img src="../images/parts/token-checkbox.png"></div>
+							<div class="checkbox part" data-num="4" data-rot="25"><img src="../images/parts/token-checkbox.png"></div>
+							<div class="checkbox part" data-num="5" data-rot="-15"><img src="../images/parts/token-checkbox.png"></div>
+							<div class="checkbox part" data-num="6" data-rot="-5"><img src="../images/parts/token-checkbox.png"></div>
+							<div class="checkbox part" data-num="7" data-rot="25"><img src="../images/parts/token-checkbox.png"></div>
+						</div>
+
+						<div class="votecover part"><img src="../images/parts/token-votecover.png"></div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col right"><div>
+				<h2>디스트릭트0x 네트워크 토큰</h2>
+				<p>모든 인터넷 시민들이 디스트릭트에 자유로이 참여 및 기여할 수있는 기회를 제공하고, 디스트릭트의 모든 참여자에게 인센티브를 제공하고, 디스트릭트0x 네트워크에 협업을 통한 의사 결정 메커니즘을 만들고 적용하기 위해 필요한, 디스트릭트0x 네트워크 토큰을 소개합니다.</p>
+				<p>디스트릭트0x 네트워크 토큰은 해당 토큰의 보유자들이 디스트릭트와 디스트릭트의 의사결정에 참여할 때 사용하는 스테이킹 토큰입니다. 디스트릭트에 디스트릭트 네트워크 토큰을 스테이킹 하게 되면, 참여자들은 그에 상응하는 디스트릭트 내의 의결권을 받게 됩니다.</p>
+				<p>이 의결권을 통해 디스트릭트의 브랜딩 전략, 행동 강령의 제정, 적용할 보조 모듈의 선택, 창출된 수익의 분배방법 등 디스트릭트 내에서 일어나는 모든 것을 결정하는 의사결정 과정에 참여할 수 있습니다.</p>
+			</div></div>
+
+		</div>
+	</div>
+</section>
+
+<!-- END TOKEN -->
+
+
+
+
+
+<!--! SECTION: 7 BUILD -->
+
+<section id="build" class="hasAnim">
+	<div class="sideblob">
+		<img src="../images/build-blob@2x.png" class="dsk">
+		<img src="../images/build-blobmobile@2x.png" class="mob">
+	</div>
+
+	<div class="factory">
+		<div class="base">
+
+			<div class="clouds part"><img src="../images/parts/build-clouds@2x.png"></div>
+
+			<div class="cityleft part"><div>
+				<div class="fan-set">
+					<div class="fan" data-num="1">
+						<img src="../images/parts/wheel-fan.png">
+						<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+					</div>
+					<div class="fan" data-num="2">
+						<img src="../images/parts/wheel-fan.png">
+						<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+					</div>
+				</div>
+
+				<div class="radio-waves part">
+					<div class="radio-wave-base"></div>
+					<div class="radio-circle" data-num="1"></div>
+					<div class="radio-circle" data-num="2"></div>
+					<div class="radio-circle" data-num="3"></div>
+				</div>
+
+				<div class="glow-dot-group part" data-num="1">
+					<div class="glow-dot" data-num="1"></div>
+					<div class="glow-dot" data-num="2"></div>
+				</div>
+				<div class="glow-dot-group part" data-num="2">
+					<div class="glow-dot" data-num="1"></div>
+					<div class="glow-dot" data-num="2"></div>
+				</div>
+
+				<div class="turbine">
+					<img src="../images/parts/turbine-full.png">
+					<div class="wheel"><img src="../images/parts/turbine-blade-whirl-blue.png"></div>
+					<img src="../images/parts/turbine-blade-cover.png" class="cover">
+				</div>
+
+				<div class="tractor part"><img src="../images/parts/build-tractor-left.png"></div>
+
+				<div class="crane" data-num="1">
+					<div class="crane-item"><img src="../images/parts/build-crane4.png"></div>
+				</div>
+				<div class="crane" data-num="2">
+					<div class="crane-item"><img src="../images/parts/build-crane5.png"></div>
+				</div>
+
+				<img src="../images/parts/build-cityleft.png" class="citybg">
+			</div></div>
+
+			<div class="cityright part">
+				<div class="glow-dot-group part" data-num="1">
+					<div class="glow-dot" data-num="1"></div>
+					<div class="glow-dot" data-num="2"></div>
+				</div>
+				<div class="glow-dot-group part" data-num="2">
+					<div class="glow-dot" data-num="1"></div>
+					<div class="glow-dot" data-num="2"></div>
+				</div>
+
+				<div class="radio-waves part">
+					<div class="radio-wave-base"></div>
+					<div class="radio-circle" data-num="1"></div>
+					<div class="radio-circle" data-num="2"></div>
+					<div class="radio-circle" data-num="3"></div>
+				</div>
+
+				<div class="fan-set">
+					<div class="fan" data-num="1">
+						<img src="../images/parts/wheel-fan.png">
+						<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+					</div>
+					<div class="fan" data-num="2">
+						<img src="../images/parts/wheel-fan.png">
+						<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+					</div>
+					<div class="fan" data-num="3">
+						<img src="../images/parts/wheel-fan.png">
+						<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+					</div>
+					<div class="fan" data-num="4">
+						<img src="../images/parts/wheel-fan.png">
+						<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+					</div>
+				</div>
+
+				<div class="badge part"><div>
+					<img src="../images/parts/build-badge@2x.png">
+				</div></div>
+
+				<div class="tractor part"><img src="../images/parts/build-tractor-right.png"></div>
+
+				<div class="pipeline">
+					<div class="pipe-data" data-num="1"><div></div></div>
+					<div class="pipe-data" data-num="2"><div></div></div>
+					<div class="pipe-data" data-num="3"><div></div></div>
+					<div class="pcover"><img src="../images/parts/hero-pipecover2.png"></div>
+				</div>
+
+				<div class="crane" data-num="1">
+					<div class="crane-item"><img src="../images/parts/build-crane1.png"></div>
+				</div>
+				<div class="crane" data-num="2">
+					<div class="crane-item"><img src="../images/parts/build-crane2.png"></div>
+				</div>
+				<div class="crane" data-num="3">
+					<div class="crane-item"><img src="../images/parts/build-crane3.png"></div>
+				</div>
+
+				<img src="../images/parts/build-cityright.png" class="citybg dsk">
+				<img src="../images/parts/build-topmobile.png" class="citybg mob">
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="contentContainer">
+
+		<div class="row spaced">
+			<div class="col left">
+				<h2>다음으로는 무엇을 만들어야 할까요？</h2>
+				<p>우리는 모든 사람들이 공개적인 커뮤니티 제안 프로세스를 통해 디스트릭트 아이디어를 제출하도록 장려하고 인센티브를 부여합니다. 디스트릭트0x 토큰의 보유자들은 해당 토큰을 통해 디스트릭트0x 팀이 어떤 종류의 디스트릭트를 만들고 배포해야 할 것인지 그 방향성을 제시할 수 있습니다.</p>
+				<a href="https://vote.district0x.io" target="_blank" class="cta-btn">다음에 만들 디스트릭트에 투표하기</a>
+			</div>
+
+			<div class="col right">
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- END BUILD -->
+
+
+
+
+
+<!--! SECTION: 8 TEAM -->
+
+<section id="team" class="hasAnim" data-dif-mobile="-50">
+	<div class="contentContainer">
+		<h2>디스트릭트0x 팀</h2>
+
+		<div class="team-members row spaced">
+			<div class="team-person" data-num="0"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-matus.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Matus Lestan</h3>
+				<p>공동 창업자, 수석 개발자</p>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Ethlance를 첫 번째 디스트릭트로 개발했습니다. Matus는 탈중앙화에 대한 강한 열정을 지닌 전업 개발자입니다. 8년간의 프리랜서 개발자로서의 경력을 지니고 있으며, 수 많은 오픈소스 프로젝트들에 대한 기여를 통해 Clojure-Ethereum 생태계를 조성하고 있습니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="1"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-joe.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Joe Urgo</h3>
+				<p>공동 창업자, 전략 및 운영</p>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Sourcerers.io의 창업자이자 대표이사인 Joe는 탈중앙화 비즈니스와 토큰 기반 거버넌스 구조에 대한 호기심이 많은 모험가입니다. Coinbase의 운영 관리자, Three Arrows Capital의 파생상품 거래사, 그리고 프로 포커선수로써의 경력을 갖고있습니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="1"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-alex.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Alexander Khoriaty</h3>
+				<p>프로젝트 관리자</p>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>디스트릭트0x의 프로젝트 관리자인 Alexander는 대량판매 시장에 혁신적이고 파괴적인 기술을 선보일 수 있는 사용자 경험을 찾고자 하는 의지를 지니고 있습니다. Alexander는 미시간 대학에서 물리학을 공부 한 후, Coinbase에서 2.5 년간 품질 보증 및 지불 운영부서에서 근무하기 전에는 화재 수사관으로써 일했습니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="3"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-mike.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Mike Konkov</h3>
+				<p>Clojurescript 개발자</p>
+				<ul>
+										<li><a target="_blank" href="https://github.com/wambat"><span class="icon-github"><span class="visuallyhidden">Github</span></span></a></li>
+										<li><a target="_blank" href="https://www.linkedin.com/in/mikekonkov/"><span class="icon-linkedin"><span class="visuallyhidden">LinkedIn</span></span></a></li>
+										<li><a target="_blank" href="mailto:mike@district0x.io"><span class="icon-envelope"><span class="visuallyhidden">Email</span></span></a></li>
+								</ul>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Mike는 업무용 응용 프로그램부터 게임에 이르기까지 광범위한 영역에서 20년 이상의 경험을 쌓은 소프트웨어 아키텍트이자 개발자입니다. 블록체인 기술이 지니고있는, 사회를 변화시킬 가능성에 열광하고 있습니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="0"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-pj.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>PJ Leimgruber</h3>
+				<p>수석 마케터</p>
+				<ul>
+										<li><a target="_blank" href="https://github.com/misterpeej"><span class="icon-github"><span class="visuallyhidden">Github</span></span></a></li>
+										<li><a target="_blank" href="https://www.linkedin.com/in/p-j-leimgruber-891aa731/"><span class="icon-linkedin"><span class="visuallyhidden">LinkedIn</span></span></a></li>
+										<li><a target="_blank" href="mailto:pj@district0x.io"><span class="icon-envelope"><span class="visuallyhidden">Email</span></span></a></li>
+								</ul>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>P.J.는 현재 ITP 476 - 서던 캘리포니아 대학에서 인터랙티브 마케팅 기술을 가르치고 있으며 European Innovation Academy의 수석 마케팅 멘토로도 일하고 있는 뛰어난 디지털 마케팅 담당자입니다. 이전에는 Microsoft, Citrix, Walmart 등 포츈 500대 기업들에게 인플루언서 마케팅 관리 및 인텔리전스를 제공하는 엔터프라이즈 클라우드 플랫폼인 NeoReach를 공동 창립했습니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="1"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-brady.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Brady McKenna</h3>
+				<p>커뮤니티 관리자</p>
+				<ul>
+										<li><a target="_blank" href="https://github.com/mckmuze"><span class="icon-github"><span class="visuallyhidden">Github</span></span></a></li>
+										<li><a target="_blank" href="https://www.linkedin.com/in/bradymck/"><span class="icon-linkedin"><span class="visuallyhidden">LinkedIn</span></span></a></li>
+										<li><a target="_blank" href="mailto:brady@district0x.io"><span class="icon-envelope"><span class="visuallyhidden">Email</span></span></a></li>
+								</ul>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Brady는 블록체인 업계에서 오랜 경험을 쌓은 컨설턴트이자 교육자입니다. 이전에는 Coinbase에서 지원 운영 및 규정 준수 팀에서 일했습니다. Brady는 블록체인 컨셉과 음악/창조적 예술을 병합하는 것으로 알려진 음악가이기도합니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="1"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-filip.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Filip Bielejec</h3>
+				<p>Clojurescript 개발자</p>
+				<ul>
+										<li><a target="_blank" href="https://github.com/fbielejec"><span class="icon-github"><span class="visuallyhidden">Github</span></span></a></li>
+										<li><a target="_blank" href="mailto:filip@district0x.io"><span class="icon-envelope"><span class="visuallyhidden">Email</span></span></a></li>
+								</ul>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Filip은 응용수학을 전공했으며, 역학에서의 지리적 인식을 위한 오픈소스 소프트웨어의 개발에서부터 건강보험용 네비게이션 및 맵데이터 솔루션까지 아우르는 다양한 영역의 경험을 보유한 소프트웨어 개발자입니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+      <div class="team-person" data-num="1"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-juan.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Juan Monetta</h3>
+				<p>Clojurescript 개발자</p>
+				<ul>
+										<li><a target="_blank" href="https://github.com/jpmonetta"><span class="icon-github"><span class="visuallyhidden">Github</span></span></a></li>
+										<li><a target="_blank" href="mailto:juan@district0x.io"><span class="icon-envelope"><span class="visuallyhidden">Email</span></span></a></li>
+								</ul>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>"Juan은 20년 이상의 경험을 지닌 소프트웨어 개발자입니다. 열정적인 발명가로써 그의 호기심 영역은 소프트웨어분야는 물론 전자학, 목공 및 제빵을 아우릅니다.  Juan이 무언가 만들고 있지 않는 때엔, 살사와 탱고를 추는 그를 발견할 수 있을 것입니다."</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="1"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-peter.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Peter Reiseman</h3>
+				<p>운영 보조</p>
+				<ul>
+					<li><a target="_blank" href="https://www.linkedin.com/in/peterreiseman/"><span class="icon-linkedin"><span class="visuallyhidden">LinkedIn</span></span></a></li>
+					<li><a target="_blank" href="mailto:peter@district0x.io"><span class="icon-envelope"><span class="visuallyhidden">Email</span></span></a></li>
+				</ul>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>리하이 대학교에서 Materials Science & Engineering의 학사학위를 받은 Peter는 블록체인 산업에 뛰어들기 전에는 반도체 업계에서 수 년간 프로젝트 매니저로 일했습니다. Peter는 공공선(greater good)의 진보를 경제적으로 장려하는 탈중앙화 기술의 열렬한 지지자입니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="2"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-luis.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Luis Cuende</h3>
+				<p>고문</p>
+
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Luis는 포브스가 선장한 30인의 30세 이하 리더 중 한명이며, MIT TR에서 선정한 최고의 발명가 35인 중 한명이자 유럽 집행 위원회 부위원장의 고문이었습니다. 그는 억만 장자 인 Tim Draper의 지원을 받아 블록체인 스타트업인 Stampery를 공동 창립했습니다. 이제 그는 Aragon을 만들어 탈중앙화된 조직들을 널리 퍼뜨림으로써 비즈니스의 탈중개화를 이끌어내고 있습니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="3"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-carl.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Carl Bennett</h3>
+				<p>고문</p>
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Carl은 오픈소스 이더리움 모바일 클라이언트 인 Status와 같은 여러 기술 회사를 공동 창립했습니다. 운영, 비즈니스 관리 및 유저 모집 분야에서 9 년 이상의 경력을 쌓았습니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="4"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-brayton.jpg)"><img src="../images/team-cover.png"></div>
+				<h3>Brayton Williams</h3>
+				<p>고문</p>
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>Brayton은 암호화폐/블록체인, VR/AR, AI/봇 및 기타 Sci-Fi 관련 기술에 중점을 둔 실리콘 밸리의 액셀러레이터 및 시드 펀드인 Boost VC의 공동 창립자이자 파트너입니다. Boost VC는 이더스캔, 아라곤, 디센트럴랜드, 폴리체인 캐피털 및 50여개의 블록체인/크립토 스타트업의 고문/투자자입니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person" data-num="4"><div>
+				<div class="team-photo" style="background-image: url(../images/photo-vincent.jpeg)"><img src="../images/team-cover.png"></div>
+				<h3>Vincent Zhou</h3>
+				<p>고문</p>
+				<div class="team-hover"><img src="../images/team-hover.png"></div>
+
+				<div class="team-overlay">
+					<div class="blob-bg"><span class="icon-team-blob blob"></span></div>
+					<div class="text">
+						<p>FinTech Blockchain Group(FBG)의 설립 파트너 인 Vincent는 디지털 화폐 거래 전문가이자 블록체인 산업에 적극적으로 투자하는 전문가입니다. FBG는 중국을 대표하는 블록체인 기반 디지털 자산 관리 회사입니다.</p>
+					</div>
+					<div class="blob-close">
+						<span class="icon-team-blob blob"></span>
+						<div class="icon-closex"></div>
+					</div>
+				</div>
+			</div></div>
+			<div class="team-person filler"></div>
+			<div class="team-person filler"></div>
+		</div>
+	</div>
+</section>
+
+<!-- END TEAM -->
+
+<!--! SECTION: 9 SUPPORTERS-->
+
+<section id="supporters">
+	<div class="contentContainer">
+		<h2>Our Supporters</h2>
+		<div class="logos spaced">
+			<div class="logo one">
+				<img src="../images/boostvc.png" alt="boostVC">
+			</div>
+			<div class="logo two">
+				<img src="../images/fintech-blockchain-group.png" alt="Fintech Blockchain Group">
+			</div>
+			<div class="logo three">
+				<img src="../images/coinfund.png" alt="CoinFund">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--END SUPPORTERS -->
+
+
+
+</div>
+
+<!-- END BLOB WRAP -->
+
+
+
+
+
+<!--! GLOBAL: FOOTER -->
+
+<section id="globalFooter" class="hasAnim">
+
+	<div class="big-blob bot">
+		<img src="../images/blob-big-bottom.png">
+	</div>
+
+	<div class="factory">
+		<div class="clouds part"><img src="../images/parts/footer-clouds.png"></div>
+		<div class="base part">
+
+			<div class="pipeline">
+				<div class="pipe-data" data-num="1"><div></div></div>
+				<div class="pipe-data" data-num="2"><div></div></div>
+				<div class="pipe-data" data-num="3"><div></div></div>
+			</div>
+
+			<div class="glow-dot" data-num="1"></div>
+			<div class="glow-dot" data-num="2"></div>
+			<div class="fan-set" data-num="1">
+				<div class="fan" data-num="1">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="2">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+			</div>
+			<div class="fan-set" data-num="2">
+				<div class="fan" data-num="1">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+				<div class="fan" data-num="2">
+					<img src="../images/parts/wheel-fan.png">
+					<div class="wheel"><img src="../images/parts/wheel-fan-spokes.png"></div>
+				</div>
+			</div>
+			<img src="../images/footer-citybg.png" class="citybg">
+			<div class="radio-waves part">
+				<div class="radio-wave-base"></div>
+				<div class="radio-circle" data-num="1"></div>
+				<div class="radio-circle" data-num="2"></div>
+				<div class="radio-circle" data-num="3"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contentContainer">
+
+		<div class="contents main">
+			<h2>대화에 참여하세요</h2>
+			<p>아래에 표시되어있는 커뮤니티에 가입하여 우리의 계획에 대해 자세히 알아보고, 피드백과 기능을 요청하고, 기여자로서 참여하세요. 당신과의 대화를 고대합니다.</p>
+			<a href="https://district0x-slack.herokuapp.com/" target="_blank" class="cta-btn"><div class="hover-fill"></div><span>디스트릭트0x 슬랙채널</span><span class="icon-slack"></span></a>
+
+			<ul class="social">
+				<li><a href="https://twitter.com/district0x" target="_blank"><span class="icon-twitter"></span></a>
+				<li><a href="https://blog.district0x.io" target="_blank"><span class="icon-medium"></span></a>
+				<li><a href="https://github.com/district0x" target="_blank"><span class="icon-github"></span></a>
+				<li><a href="https://t.me/district0x" target="_blank"><span class="icon-telegram"></span></a>
+				<li><a href="https://www.reddit.com/r/district0x" target="_blank"><span class="icon-reddit"></span></a>
+			</ul>
+		</div>
+
+		<div class="contact spaced">
+			<div><p>연락: <a href="mailto:hello@district0x.io">hello@district0x.io</a></p></div>
+			<div><p>디자인: <a href="http://www.griflan.com" target="_blank">Griflan</a></p></div>
+		</div>
+
+	</div>
+
+	<div class="backtotop">
+		<div class="icon icon-arrow-up"></div>
+	</div>
+
+</section>
+
+<!-- END FOOTER -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="../js/district0x.js"></script>
+
+<script type="text/javascript">
+
+	function timeRemaining(targetDate) {
+		var now = (new Date()).getTime();
+		var targetDateTimestamp = targetDate.getTime();
+		if (targetDateTimestamp <= now) {
+			return {days: 0, hours: 0,minutes: 0};
+		}
+
+		var delta = Math.abs(targetDateTimestamp - now) / 1000;
+		// calculate (and subtract) whole days
+		var days = Math.floor(delta / 86400);
+		delta -= days * 86400;
+
+		// calculate (and subtract) whole hours
+		var hours = Math.floor(delta / 3600) % 24;
+		delta -= hours * 3600;
+
+		// calculate (and subtract) whole minutes
+		var minutes = Math.floor(delta / 60) % 60;
+
+		return {days: days, hours: hours, minutes: minutes};
+	}
+
+	function updateCounters(timeRemaining) {
+		$('.cd-days').text(timeRemaining.days);
+		$('.cd-hours').text(timeRemaining.hours);
+		$('.cd-mins').text(timeRemaining.minutes);
+	}
+
+	$(document).ready(function() {
+		var contributionDate = new Date(Date.UTC(2017, 7, 1, 15));
+		updateCounters(timeRemaining(contributionDate));
+		cdInt = setInterval(function(){
+			updateCounters(timeRemaining(contributionDate));
+		}, 60000)
+	});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100624852-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
