@@ -10,6 +10,7 @@ function animScroll(sec, speed, offset){
 	activeOffset = $(sec).offset().top+offset;	
 	TweenMax.to('html,body', speed, {scrollTop:activeOffset, ease:Expo.easeInOut});
 }
+
 var blobseq1 = [1,1,2,1,2,1];
 var blobseq2 = [1,2,2,1,2,1];
 var blobseq3 = [1,2,2,1,1,2];
@@ -108,7 +109,9 @@ $(window).resize();
 
 //! LOADER
 
-freezePage();
+//freezePage();
+$('#loader').hide();
+
 // start bg blob animations
 $('#loader').find('.blob-bg-anim').find('.blobmover').each(function(i){
 	if(i<4){
@@ -473,6 +476,10 @@ $(window).scroll(function(){
 				
 				}
 				
+				if($(this).attr('id') == 'registry'){
+					registryOn();				
+				}
+				
 				/*
 				if($(this).attr('id') == 'contribution'){
 					$('#contribution').find('.blobmover').each(function(i){
@@ -576,6 +583,10 @@ $(window).scroll(function(){
 						$(this).find('.pipe-data>div').removeClass('paD02');
 					})
 				
+				}
+				
+				if($(this).attr('id') == 'registry'){
+					registryOff();
 				}
 				
 				/*
@@ -812,4 +823,206 @@ function moveCode(){
 	
 	}, 1000)
 }
+
+
+
+
+
+//! ANIMATION: REGISTRY
+
+$reg = $('#registry');
+$offBox = $reg.find('.reg-conveyer.right .registry-box');
+
+var regColors = ['pink','green','yellow','green','pink','blue','yellow','blue','green','yellow','pink','blue'];
+var regOrder = ['yes','no','yes','yes','no','yes','yes','no','yes','no','yes','yes'];
+var slotX = [-846,-684,-522,-360];
+var slotY = [185,0,-185];
+
+var regNum = 0;
+var yesNum = 0;
+var slotNum = 0;
+var rowNum = 0;
+var totalSlots = 4;
+var registryRunning = false;
+var regInterval = 3800;
+var offTimeline = new TimelineMax({paused:true});
+var bezierData = MorphSVGPlugin.pathDataToBezier("#offPath");
+var regTOs = [];
+
+$('.registry-boxes').find('.registry-box:not(.dummy)').addClass('hidden');
+
+// no box path off screen
+function regBuildTL(){
+	offBox1 = new TweenMax($offBox, 1.5, {startAt:{x:0,y:0,rotation:0,opacity:1}, bezier:{type:"cubic", values:bezierData, autoRotate:true}, ease:Quad.easeIn})
+	offBox2 = new TweenMax($offBox, .2, {opacity:0, ease:Linear.easeNone, onComplete:function(){$reg.find('.meterline').removeClass('yes no');}})
+	offTimeline.add(offBox1,0).add(offBox2,1.2);
+	offTimeline.pause();
+}
+
+function runRegistry(){	
+	
+	// reset parts
+	$reg.find('.claw-wrap .registry-box').removeClass('hidden');
+	$reg.find('.claw-arm').removeClass('closed');
+	$reg.find('.meterline').removeClass('yes no');
+	
+	// change box
+	$('.registry-box.mover').find('img').hide();
+	$('.registry-box.mover').find('img[data-color="'+regColors[regNum]+'"]').show();
+	
+	// slide in crane
+	TweenMax.to($reg.find('.claw-wrap'), 1.2, {startAt:{x:860}, x:0, ease:Power3.easeOut})
+	
+	// open crane and drop box	
+	regTO0 = setTimeout(function(){
+		$reg.find('.claw-arm').addClass('open');
+		$reg.find('.claw-wrap .registry-box').addClass('dropped');
+	}, 1000)
+	regTOs[0] = regTO0;
+	
+	// close crane and slide back
+	regTO1 = setTimeout(function(){
+		$reg.find('.claw-arm').removeClass('open').addClass('closed');
+		$reg.find('.claw-wrap .registry-box').removeClass('dropped').addClass('hidden');
+		TweenMax.to($reg.find('.claw-wrap'), 1, {x:860, ease:Power3.easeInOut})
+	}, 1700)
+	regTOs[1] = regTO1;
+	
+	// turn meter to yes or no
+	regTO2 = setTimeout(function(){
+		if(regOrder[regNum] == 'no'){
+			$reg.find('.meterline').addClass('no');
+		} else {
+			$reg.find('.meterline').addClass('yes');
+		}
+	}, 1800)
+	regTOs[2] = regTO2;
+	
+	// slide off box
+	regTO3 = setTimeout(function(){	
+		
+		// NO box move right and off screen
+		if(regOrder[regNum] == 'no'){
+			offTimeline.restart();
+			
+		// YES box move left and stay on screen	
+		} else {
+									
+			// slide up conveyer
+ 			jumpX = -450;
+ 			jumpY = -150;
+// 			//if(slotNum == 0){jumpX = -480; jumpY = -145;}
+ 			if(slotNum == 3){jumpX = -360; jumpY = -115;}
+			TweenMax.to($('.reg-conveyer.left').find('.registry-box'), .6, {startAt:{x:0,y:0}, x:jumpX, y:jumpY, ease:Linear.easeNone})
+			TweenMax.to($('.reg-conveyer.left').find('.registry-box'), .4, {delay:.6, y:-44, ease:Power3.easeOut})
+			
+			// rotate
+ 			TweenMax.set($('.reg-conveyer.left').find('.registry-box>img'), {rotation:19});
+ 			$('.reg-conveyer.left').find('.registry-box>img').removeClass('box-jumper');
+// 			TweenMax.to($('.reg-conveyer.left').find('.registry-box>img'), .75, {delay:.5, y:-80})
+			setTimeout(function(){$('.reg-conveyer.left').find('.registry-box>img').addClass('box-jumper');}, 600);
+ 			//TweenMax.to($('.reg-conveyer.left').find('.registry-box>img'), 1, {delay:.8, y:0, rotation:0, ease:Quad.easeInOut})
+			
+			// slide into slot
+			TweenMax.to($('.reg-conveyer.left').find('.registry-box'), .75, {delay:1, x:slotX[slotNum], y:-44, ease:Power2.easeInOut, onComplete:function(){
+				$('.reg-conveyer.left').find('.registry-box').attr('style','');
+				$('.registry-boxes').find('.registry-box[data-num="'+(yesNum+1)+'"]').removeClass('hidden');
+				
+				yesNum++;
+				slotNum++;
+				
+				// slots filled, slide up
+				if(slotNum == totalSlots){
+					rowNum++;
+					slotNum = 0;
+					console.log('slideup: '+slotY[rowNum]+' / '+rowNum)
+					TweenMax.to($('.registry-boxes'), .75, {y:slotY[rowNum], ease:Power3.easeInOut, onComplete:function(){
+						
+						// reset for loop
+						if(rowNum == 2){
+							rowNum = 0;
+							yesNum = 0;
+							regNum = 0;
+							TweenMax.set($('.registry-boxes'), {y:slotY[0]})
+							$('.registry-boxes').find('.registry-box:not(.dummy)').addClass('hidden');
+						}
+					}})
+				}
+			}})				
+		}		
+	}, 2000);
+	regTOs[3] = regTO3;
+	
+	// restart
+	if(registryRunning){
+		regRestart = setTimeout(function(){
+			
+			// increment 
+			regNum++;
+			if(regNum == regColors.length){regNum = 0; yesNum = 0;}
+			
+			runRegistry();
+			
+		}, regInterval)
+	}
+} 
+
+function resetRegistry(){	
+	yesNum = 0;
+	regNum = 0;
+	slotNum = 0;
+	registryRunning = false;
+	$('.reg-conveyer.left').find('.registry-box').attr({'style':''});
+	$reg.find('.claw-wrap, .reg-conveyer.right .registry-box').attr({'style':''});
+	$reg.find('.claw-arm').removeClass('open');
+	$reg.find('.claw-wrap .registry-box').removeClass('dropped');
+	$reg.find('.meterline').removeClass('yes no');
+	TweenMax.killTweensOf('.claw-wrap');
+	TweenMax.killTweensOf('.registry-box');
+	for(i=0;i<regTOs.length;i++){
+		clearTimeout(regTOs[i]);
+	}
+	TweenMax.set($('.registry-boxes'), {y:slotY[0]})
+	$('.registry-boxes').find('.registry-box:not(.dummy)').addClass('hidden');
+	clearTimeout(regRestart);
+}
+
+function registryOn(){
+	if(!registryRunning){
+		registryRunning = true;
+		regBuildTL();
+		runRegistry();
+	}
+}
+function registryOff(){
+	registryRunning = false;
+	resetRegistry();
+}
+
+// disable interval while tab is open
+
+var pageInactive = false;
+$(window).focus(function() {
+	pageInactive = false;
+	if($('#registry').hasClass('on')){		
+		registryOn();
+	}
+});
+
+$(window).blur(function() {
+    pageInactive = true;
+    if($('#registry').hasClass('on')){
+    	registryOff();
+    }
+});
+
+
+$('.computer').click(function(){
+	registryOn();
+})
+$('#globalFooter').click(function(){
+	registryOff();							
+})
+
+
 

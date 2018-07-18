@@ -1,3 +1,9 @@
+$(window).resize(function(){
+	winW = $(window).width();
+	winH = $(window).height();
+	console.log(winW);
+})
+
 jQuery(document).ready(function($){
 
 	/*-------------------------------------

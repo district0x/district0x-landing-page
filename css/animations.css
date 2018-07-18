@@ -1929,3 +1929,118 @@
 @keyframes signswing{0%{transform: rotateX(15deg);} 50%{transform: rotateX(-20deg);} 100%{transform: rotateX(15deg);}}
 .swing1{animation: signswing infinite 3s ease-in-out;}
 */
+/*! ANIMATIONS: Registry section */
+@-webkit-keyframes codeScroll {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -39px, 0px);
+  }
+}
+@keyframes codeScroll {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -39px, 0px);
+  }
+}
+.code-scroll {
+  -webkit-animation: codeScroll infinite 4s linear;
+  -moz-animation: codeScroll infinite 4s linear;
+  animation: codeScroll infinite 4s linear;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes graphScroll {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-98px, 0px, 0px);
+  }
+}
+@keyframes graphScroll {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-98px, 0px, 0px);
+  }
+}
+.graph-scroll {
+  -webkit-animation: graphScroll infinite 2s linear;
+  -moz-animation: graphScroll infinite 2s linear;
+  animation: graphScroll infinite 2s linear;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes boxJumper {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes boxJumper {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(19deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+}
+.box-jumper {
+  -webkit-animation: boxJumper 1 0.5s ease-in;
+  -moz-animation: boxJumper 1 0.5s ease-in;
+  animation: boxJumper 1 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes checkFloat {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(150px, 60px, 0px) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(100px, 0px, 0px) rotate(-45deg);
+  }
+  75% {
+    transform: translate3d(40px, 90px, 0px) rotate(30deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+}
+@keyframes checkFloat {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(150px, 60px, 0px) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(100px, 0px, 0px) rotate(-45deg);
+  }
+  75% {
+    transform: translate3d(40px, 90px, 0px) rotate(30deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+}
+.check-float {
+  -webkit-animation: checkFloat infinite 10s ease-in-out;
+  -moz-animation: checkFloat infinite 10s ease-in-out;
+  animation: checkFloat infinite 10s ease-in-out;
+  animation-fill-mode: forwards;
+}
