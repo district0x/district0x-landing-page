@@ -39,7 +39,7 @@ var winH;
 $(window).resize(function(){
 	winW = $(window).width();
 	winH = $(window).height();
-	console.log(winW);
+	//console.log(winW);
 	
 	if(winW<=mobileBreak && !mobile){
 		mobile = true;
@@ -631,7 +631,7 @@ $(window).scroll(function(){
 
 })
 
-$('.bullet-check').each(function(){
+$('.bullet-check:not(.cn)').each(function(){
 	if($(this).hasClass('on')){
 		$(this).html('<img src="images/parts/checkbox@2x.png"><div class="bullet-checkmark"><img src="images/parts/checkmark@2x.png"></div>');
 	} else {
@@ -935,7 +935,7 @@ function runRegistry(){
 				if(slotNum == totalSlots){
 					rowNum++;
 					slotNum = 0;
-					console.log('slideup: '+slotY[rowNum]+' / '+rowNum)
+					//console.log('slideup: '+slotY[rowNum]+' / '+rowNum)
 					TweenMax.to($('.registry-boxes'), .75, {y:slotY[rowNum], ease:Power3.easeInOut, onComplete:function(){
 						
 						// reset for loop
