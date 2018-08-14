@@ -139,6 +139,9 @@ Columns
   .columns.four > * {
     width: 25%;
   }
+  .columns.three > * {
+    width: 33.3%;
+  }
 }
 @media (min-width: 1024px) {
   .columns.four > *:nth-child(4n+1) {
@@ -1216,6 +1219,10 @@ Transparency Intro
 .team-intro p + p {
   margin-top: 20px;
 }
+.team-intro a {
+  color: #47608e;
+  text-decoration: underline;
+}
 .team-intro .col {
   position: relative;
 }
@@ -1289,6 +1296,10 @@ Transparency Intro
   top: 50%;
   margin-left: -82px;
   margin-top: -75px;
+}
+.team-partners .logo.wide {
+  width: 162px;
+  margin-left: -81px;
 }
 @media screen and (max-width: 1024px) {
   .team-intro {
@@ -2730,11 +2741,11 @@ Mission
   }
   50% {
     -webkit-transform: translate3d(99px, 0px, 0px);
-    transform: translate3d(99px, 0px, 0px);
+    transform: translate3d(143px, 0px, 0px);
   }
   100% {
     -webkit-transform: translate3d(99px, 104px, 0px);
-    transform: translate3d(99px, 104px, 0px);
+    transform: translate3d(143px, 104px, 0px);
   }
 }
 @keyframes missionpipe02 {
@@ -2744,11 +2755,11 @@ Mission
   }
   50% {
     -webkit-transform: translate3d(99px, 0px, 0px);
-    transform: translate3d(99px, 0px, 0px);
+    transform: translate3d(143px, 0px, 0px);
   }
   100% {
     -webkit-transform: translate3d(99px, 104px, 0px);
-    transform: translate3d(99px, 104px, 0px);
+    transform: translate3d(143px, 104px, 0px);
   }
 }
 .mission .pa02 {
@@ -2771,16 +2782,16 @@ Mission
     transform: translate3d(0px, 0px, 0px);
   }
   25% {
-    -webkit-transform: translate3d(45px, 0px, 0px);
-    transform: translate3d(45px, 0px, 0px);
+    -webkit-transform: translate3d(98px, 0px, 0px);
+    transform: translate3d(98px, 0px, 0px);
   }
   75% {
-    -webkit-transform: translate3d(45px, 220px, 0px);
-    transform: translate3d(45px, 220px, 0px);
+    -webkit-transform: translate3d(98px, 220px, 0px);
+    transform: translate3d(98px, 220px, 0px);
   }
   100% {
-    -webkit-transform: translate3d(0px, 220px, 0px);
-    transform: translate3d(0px, 220px, 0px);
+    -webkit-transform: translate3d(98px, 220px, 0px);
+    transform: translate3d(98px, 220px, 0px);
   }
 }
 @keyframes missionpipe03 {
@@ -2789,16 +2800,16 @@ Mission
     transform: translate3d(0px, 0px, 0px);
   }
   25% {
-    -webkit-transform: translate3d(45px, 0px, 0px);
-    transform: translate3d(45px, 0px, 0px);
+    -webkit-transform: translate3d(98px, 0px, 0px);
+    transform: translate3d(98px, 0px, 0px);
   }
   75% {
-    -webkit-transform: translate3d(45px, 220px, 0px);
-    transform: translate3d(45px, 220px, 0px);
+    -webkit-transform: translate3d(98px, 220px, 0px);
+    transform: translate3d(98px, 220px, 0px);
   }
   100% {
-    -webkit-transform: translate3d(0px, 220px, 0px);
-    transform: translate3d(0px, 220px, 0px);
+    -webkit-transform: translate3d(98px, 220px, 0px);
+    transform: translate3d(98px, 220px, 0px);
   }
 }
 @-webkit-keyframes missionpipeD03 {
@@ -2860,6 +2871,82 @@ Mission
 .mission .paD03 {
   -webkit-animation: missionpipeD03 infinite 2.5s linear;
   animation: missionpipeD03 infinite 2.5s linear;
+}
+@-webkit-keyframes m_pipe02 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  20% {
+    transform: translate3d(54px, 0px, 0px);
+  }
+  80% {
+    transform: translate3d(54px, 220px, 0px);
+  }
+  100% {
+    transform: translate3d(-25px, 220px, 0px);
+  }
+}
+@keyframes m_pipe02 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  20% {
+    transform: translate3d(44px, 0px, 0px);
+  }
+  80% {
+    transform: translate3d(44px, 220px, 0px);
+  }
+  100% {
+    transform: translate3d(-25px, 220px, 0px);
+  }
+}
+@-webkit-keyframes m_pipeD02 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  20.1% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  80.1% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes m_pipeD02 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  20.1% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  80.1% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+.mission .pa04 {
+  -webkit-animation: m_pipe02 infinite 2.5s linear;
+  animation: m_pipe02 infinite 2.5s linear;
+}
+.mission .paD04 {
+  -webkit-animation: m_pipeD02 infinite 2.5s linear;
+  animation: m_pipeD02 infinite 2.5s linear;
 }
 .mission .pipeline.three {
   width: 48px;
@@ -2957,7 +3044,7 @@ How We Work
   font-weight: bold;
   color: #2c398f;
   text-align: center;
-  padding-top: 28px;
+  padding-top: 30px;
   margin: 0 auto 27px auto;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
@@ -2979,7 +3066,7 @@ How We Work
   color: #47608e;
   font-family: "proxima-soft", sans-serif;
   font-weight: 400;
-  max-width: 240px;
+  max-width: 280px;
   margin: 0 auto;
 }
 /* Desktop */
@@ -2989,7 +3076,7 @@ How We Work
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-  .how-we-work .columns > div:nth-child(2n):after {
+  .how-we-work .columns > div:nth-child(3n):after {
     display: none;
   }
 }
