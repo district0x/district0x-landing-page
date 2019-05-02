@@ -1,0 +1,24 @@
+dist: xenial
+language: node_js
+notifications:
+  email:
+    recipients:
+    - alexander@district0x.io
+    on_success: never
+    on_failure: always
+  slack:
+    on_success: always
+    on_failure: always
+    rooms:
+    - district0x:53vhalUfg0MitsQwzjP5PWdd#travis-ci
+services:
+- docker
+deploy:
+- provider: script
+  script: bash docker-push.sh
+  on:
+    branch: master
+env:
+  global:
+  - secure: E4YR0R7hfXPA4b9U0J2IPOz84VjtsnbrfFZwLJMLK41Tzw/ic7T7+IFD0KLQDPk33YYjn6KAlgLoYtNNSe9+1IsMkRJEnOrddGj9iCvWUHyEtC382JsO2e5++FDxOKiAiwMo/R7RC6OdsS7CdYIVm1NdBWvJxjKJD1WFj0kUJeBINW6T/fxyo2HzJFCoxIqqIAupGvJ6DdNzdJC3iYaSjFipyfPJYgMkacmXSH0R2eJSezVYhgyew8jZkrv8hco71TgF7RN8IRbMLBCvoUm4W7pidMH2Pyu9v9u1dbYIMRAE1m3Nvi5b7OtaF6bYGiq1RQuWnaheLJJYjQdHUOoJZ7rl74MkUsECBEESmKIjh4C9NF0gBPBL+sr0zKJb8eGIOOktwBFSKZjxiOjkLwI2/MNqWw4kt5z7Dm9fJYv6KoU1TYEx71lPLxlDvMva4VMhWSNfX3bmwuFHvwk6Oy9ADVVyTlJsj10r83qdu3eTHR+SxZpcVNIkQ7u3eDSAb1x3+UoavxUw68shCrW7NTjkcCHwUoL7Oe4HtvJiPGCTiNotcpJw7TuF989BD9w+/O6UhjwSvL+mQL5GxY7CWUS2iCcMc6sGSvha9fVubKPS9amtzr5S1Xo3qyFTHSKydHAkmtln1w8iB5zyzeottcZTpxsGa1WsU6N2k17u1wfiz+w=
+  - secure: iqSu+cToeECUu9FLrr+81KozRoxRwOXJijB0k9w3D+LF/IWDZdk5S9GR1W9F8wAEpEfvVSKhDjJYi4WVmFlEU+Hfsrx4I8QrN/g18w/tDMxXtydZvaLm2DwxDekN42H43xi9gxT59w9wSZrNmM49zBxGNFt0hpBhp30wT4EvdljELnrTz1Zu/jZjv9UFe0XvN1rfHLpQtitUuT8BSL7xlthaxfRxostxrOZMXchzy7JgwXcf/jkQAZ6iEv+Nm29LPq2n/J8y7aCjNI472PzUvseCuC4C9HzZ7D3vsb2rvYv9KSPMZaXjZaWDVmW7hBC4u27+nRyvIXwFJtcgVMSBdH/F180k6tpDiGPlhGBk5en6Kz0s56ZlH0ifcvM14gVkXNLD3fdWup/NXXRcCKUHU5a6MSNL6BOop0DSWxyGYQDENTRz9qj+KoxHGvZZ6PK0XDlBCIiG0Tj2JCuZVnbxV2UrFEo3iRfSUigPmg83uQmNCzJW6QpGDNcnWPnjKPf3sc1zzoirGWCxBArOQzH3UyirvyiMNSS+007c6kPwB5+eXddNl9j/MPTCOGb/G77orGBRUzDF9OVM4ncesA8i1gRXtgMlJCCd5vCswFQTxDHPRhuY44+tWN0SsMj26KGUR+otXshQr7IDjTtsxKMNm1yf8b5M+BDC0fslp+pWmcQ=
