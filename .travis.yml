@@ -1,5 +1,3 @@
-dist: xenial
-language: node_js
 notifications:
   email:
     recipients:
@@ -12,12 +10,12 @@ notifications:
     rooms:
     - district0x:53vhalUfg0MitsQwzjP5PWdd#travis-ci
 services:
-- docker
+  - docker
 deploy:
-- provider: script
-  script: bash docker-push.sh
-  on:
-    branch: master
+  - provider: script
+    script: bash docker-push.sh
+    on:
+      branch: master
 env:
   global:
   - secure: E4YR0R7hfXPA4b9U0J2IPOz84VjtsnbrfFZwLJMLK41Tzw/ic7T7+IFD0KLQDPk33YYjn6KAlgLoYtNNSe9+1IsMkRJEnOrddGj9iCvWUHyEtC382JsO2e5++FDxOKiAiwMo/R7RC6OdsS7CdYIVm1NdBWvJxjKJD1WFj0kUJeBINW6T/fxyo2HzJFCoxIqqIAupGvJ6DdNzdJC3iYaSjFipyfPJYgMkacmXSH0R2eJSezVYhgyew8jZkrv8hco71TgF7RN8IRbMLBCvoUm4W7pidMH2Pyu9v9u1dbYIMRAE1m3Nvi5b7OtaF6bYGiq1RQuWnaheLJJYjQdHUOoJZ7rl74MkUsECBEESmKIjh4C9NF0gBPBL+sr0zKJb8eGIOOktwBFSKZjxiOjkLwI2/MNqWw4kt5z7Dm9fJYv6KoU1TYEx71lPLxlDvMva4VMhWSNfX3bmwuFHvwk6Oy9ADVVyTlJsj10r83qdu3eTHR+SxZpcVNIkQ7u3eDSAb1x3+UoavxUw68shCrW7NTjkcCHwUoL7Oe4HtvJiPGCTiNotcpJw7TuF989BD9w+/O6UhjwSvL+mQL5GxY7CWUS2iCcMc6sGSvha9fVubKPS9amtzr5S1Xo3qyFTHSKydHAkmtln1w8iB5zyzeottcZTpxsGa1WsU6N2k17u1wfiz+w=
