@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ejz0w3');
-  src:  url('fonts/icomoon.eot?ejz0w3#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ejz0w3') format('truetype'),
-    url('fonts/icomoon.woff?ejz0w3') format('woff'),
-    url('fonts/icomoon.svg?ejz0w3#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?lr1ugh');
+  src:  url('fonts/icomoon.eot?lr1ugh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?lr1ugh') format('truetype'),
+    url('fonts/icomoon.woff?lr1ugh') format('woff'),
+    url('fonts/icomoon.svg?lr1ugh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -54,9 +55,6 @@
 .icon-closex:before {
   content: "\e909";
 }
-.icon-telegram:before {
-  content: "\e90a";
-}
 .icon-starbg:before {
   content: "\e90b";
 }
@@ -80,4 +78,7 @@
 }
 .icon-medium:before {
   content: "\f23a";
+}
+.icon-discord:before {
+  content: "\e90a";
 }

@@ -2624,7 +2624,7 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
 }
-.toplinks .cta-btn .icon-telegram {
+.toplinks .cta-btn .icon-discord {
   font-size: 16px;
   display: inline-block;
   margin-left: 10px;
@@ -3026,7 +3026,7 @@ a:focus {
   height: 35px;
   line-height: 35px;
   /*span{vertical-align: top;}
-					.icon-telegram{font-size: 15px; margin-top: 9px;}*/
+					.icon-discord{font-size: 15px; margin-top: 9px;}*/
 }
 #globalMenu .menu-wrap .menu-contents .mobile-links ul.gen {
   border-top: 1px solid rgba(71, 96, 142, 0.5);
@@ -5925,7 +5925,7 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
 }
-#globalFooter .cta-btn .icon-telegram {
+#globalFooter .cta-btn .icon-discord {
   font-size: 20px;
   margin-left: 12px;
 }
