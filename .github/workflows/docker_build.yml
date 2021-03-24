@@ -23,7 +23,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           echo "Building on ${GITHUB_HEAD_REF} branch"
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f docker-builds/Dockerfile docker-builds
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           if [[ ${GITHUB_HEAD_REF} == "refs/heads/master" ]]; then
             echo "On the default branch additionally pushing latest tag "
