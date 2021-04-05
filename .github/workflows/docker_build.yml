@@ -1,4 +1,13 @@
-on: [push]
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
 
 name: build and push image to ECR
 
@@ -22,11 +31,11 @@ jobs:
           ECR_REPOSITORY: "district0x-landing-page"
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          echo "Building on ${GITHUB_HEAD_REF} branch"
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f docker-builds/Dockerfile .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          if [[ ${GITHUB_HEAD_REF} == "refs/heads/master" ]]; then
-            echo "On the default branch additionally pushing latest tag "
+          echo "Building on ${GITHUB_REF} branch"
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
+          if [[ ${GITHUB_REF} == "refs/heads/master" ]]; then
+            echo "On the default branch will push to the registry with latest and ${IMAGE_TAG} tags"
             docker tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
             docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+            docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
           fi
