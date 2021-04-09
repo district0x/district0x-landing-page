@@ -1,0 +1,12 @@
+.circleci
+.dockerignore
+.DS_Store
+.git
+.github
+.gitignore
+.travis.yml
+docker-push.sh
+Dockerfile
+node_modules
+npm-debug.log
+README.md
