@@ -4385,7 +4385,8 @@ a:focus {
   max-width: 163px;
 }
 #districts .district-box[data-num="4"],
-#districts .district-box[data-num="5"] {
+#districts .district-box[data-num="5"],
+#districts .district-box[data-num="6"] {
   margin-top: 81px;
 }
 #districts .district-box .blob-bg-anim[data-num="2"] > div {
