@@ -4379,9 +4379,12 @@ a:focus {
   max-width: 215px;
 }
 #districts .district-box[data-num="4"] img {
-  max-width: 156px;
+  max-width: 145px;
 }
 #districts .district-box[data-num="5"] img {
+  max-width: 163px;
+}
+#districts .district-box[data-num="6"] img {
   max-width: 163px;
 }
 #districts .district-box[data-num="4"],
