@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lr1ugh');
-  src:  url('fonts/icomoon.eot?lr1ugh#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lr1ugh') format('truetype'),
-    url('fonts/icomoon.woff?lr1ugh') format('woff'),
-    url('fonts/icomoon.svg?lr1ugh#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ey4gth');
+  src:  url('fonts/icomoon.eot?ey4gth#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ey4gth') format('truetype'),
+    url('fonts/icomoon.woff?ey4gth') format('woff'),
+    url('fonts/icomoon.svg?ey4gth#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,38 +25,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-check:before {
+.icon-defipulse:before {
   content: "\e900";
 }
-.icon-arrow-down:before {
+.icon-check:before {
   content: "\e901";
 }
-.icon-arrow-right:before {
+.icon-arrow-down:before {
   content: "\e902";
 }
-.icon-arrow-up:before {
+.icon-arrow-right:before {
   content: "\e903";
 }
-.icon-arrow-left:before {
+.icon-arrow-up:before {
   content: "\e904";
 }
-.icon-team-blob:before {
+.icon-arrow-left:before {
   content: "\e905";
 }
-.icon-blob2:before {
+.icon-team-blob:before {
   content: "\e906";
 }
-.icon-blob3:before {
+.icon-blob2:before {
   content: "\e907";
 }
-.icon-blob1:before {
+.icon-blob3:before {
   content: "\e908";
 }
-.icon-closex:before {
+.icon-blob1:before {
   content: "\e909";
 }
-.icon-starbg:before {
+.icon-closex:before {
+  content: "\e90a";
+}
+.icon-discord:before {
   content: "\e90b";
+}
+.icon-starbg:before {
+  content: "\e90c";
 }
 .icon-reddit:before {
   content: "\eac6";
@@ -78,10 +84,4 @@
 }
 .icon-medium:before {
   content: "\f23a";
-}
-.icon-discord:before {
-  content: "\e90a";
-}
-.icon-defipulse:before {
-  content: "\e910";
 }
