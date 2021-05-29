@@ -4210,7 +4210,7 @@ a:focus {
 }
 /*! SECTION: 4 DISTRICTS */
 #districts {
-  margin-top: -45px;
+  margin-top: 0;
   text-align: center;
   padding-top: 635px;
   padding-bottom: 50px;
@@ -4848,7 +4848,7 @@ a:focus {
   padding-top: 415px;
   padding-bottom: 0px;
   min-height: 1500px;
-  margin-top: -225px;
+  margin-top: -165px;
 }
 #build .cta-btn {
   margin-top: 25px;
