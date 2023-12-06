@@ -14,16 +14,31 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+
       - name: Login to Amazon ECR
         id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+        uses: aws-actions/amazon-ecr-login@v2
+
+
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          file: docker-builds/${{ matrix.image }}/Dockerfile
+          build-args: BUILD_ENV=${{ matrix.env }}
+          push: true
+          tags: ${{ secrets.ECR_REGISTRY }}/ethlance-${{ matrix.image }}:latest-${{ matrix.env }}        
+
       - name: Build push image on commit
         env:
           ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
