@@ -36,8 +36,6 @@ Disallow: /*.svg$
 Disallow: /*.ico$
 Disallow: /*.mp4$
 Disallow: /*.webm$
-Disallow: /*.mp3$
-Disallow: /*.wav$
 Disallow: /*.woff$
 Disallow: /*.woff2$
 Disallow: /*.ttf$
